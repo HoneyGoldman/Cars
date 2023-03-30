@@ -1,0 +1,45 @@
+<div class="flexContainer card twoCarsContainer" style=" flex-direction: row;
+margin-top: 16px;
+justify-content: space-evenly;
+">
+    <app-car-home-card dir="ltr" style="width: 44%;" [car]="ionic"></app-car-home-card>
+    <div class="spacer"></div>
+    <app-car-home-card dir="rtl" style="width: 44%;" [car]="tesla"></app-car-home-card>
+</div>
+<div class="shadow"></div>
+<div dir="rtl" class="flexContainer" style="flex-direction: row;justify-content: space-around;
+margin-top: 10px;">
+    <div class="boldText thinText">2740 צפיות</div>|
+    <div class="boldText thinText">1080 מדרגים</div>|
+    <div class="boldText thinText">530 תגובות</div>
+</div>
+
+<div dir="rtl" class="flexContainer" style="margin-top: 10px;">
+    <button class="button" style="font-size: 16px;">
+        <h3>קדימה להשוות!</h3>
+    </button>
+</div>
+
+<div dir="rtl" class="flexContainer"
+    style="margin-top: 10px;justify-content: space-evenly;flex-direction: row;margin-top: 20px;">
+    <div class="boldText thinText"><div>
+        <img src="../../assets/carIcon.png" style="height: 35px;margin-inline: calc(10%);" alt="">
+        <h4>התאימו לי רכב</h4>
+    </div>
+        
+    </div>
+    <div class="boldText thinText">
+        <div>
+            <img src="../../assets/electricIcon.png" style="height: 35px;margin-inline: calc(30%);" alt="">
+            <h4>על חשמל</h4>
+        </div>
+
+    </div>
+    <div class="boldText thinText">
+        <div>
+            <img src="../../assets/newIcon.png" style="height: 35px;margin-inline: calc(30%);" alt="">
+            <h4>החדשים</h4>
+        </div>   
+    </div>
+
+</div>

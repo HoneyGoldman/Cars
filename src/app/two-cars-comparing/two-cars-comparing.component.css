@@ -1,0 +1,13 @@
+.card{
+    background-image: -webkit-linear-gradient(#aaaaaa,red,45deg);
+}
+
+.button {
+    border: none;
+    background: url('../../assets/button.png') center no-repeat;
+    background-size: contain;
+    padding: 0px 0px;
+    width: 50%;
+    margin: auto;
+    margin-top: 23px;
+}

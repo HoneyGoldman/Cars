@@ -1,0 +1,31 @@
+<div dir="rtl" class="flexContainer visible" [ngClass]="this.carsView?'hidden':'visible'">
+    <img class="logo" src="../../assets/logo.png" alt="">
+    <input *ngIf="!this.carsView" class="logo input" type="text" placeholder="חפש/י רכב" [(ngModel)]="searchText"
+        (click)="changeCarsView()">
+</div>
+<div *ngIf="this.carsView" style="background-image: linear-gradient(1deg,#f0f0f0 14%, #8bead4);
+margin-top: -86px;">
+    <app-search class="searchPopUp" [ngClass]="!this.carsView?'hidden':'visible'"
+        [ngStyle]="this.carsView?{'height': '100vh'} : {'height': '0','margin':'0'}"
+        (close)="changeCarsView()"></app-search>
+</div>
+
+<div *ngIf="!this.carsView" dir="rtl" class="flexContainer" style="flex-direction: row;justify-content: space-evenly;">
+    <div>
+        <a class="boldText" style="padding-left: 74px;"> נוקאאוט יומי</a>
+    </div>
+    <div style="padding-right: 50px;">
+        <button class="boldText homeButton">לתוצאות</button>
+    </div>
+</div>
+<div *ngIf="!this.carsView">
+    <app-two-cars-comparing></app-two-cars-comparing>
+</div>
+
+
+
+<!-- <div class="flexContainer">
+    <div *ngFor="let car of cars" class="carCard">
+        <app-car-card [car]="car"></app-car-card>
+    </div>
+</div> -->

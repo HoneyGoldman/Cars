@@ -1,0 +1,63 @@
+<div style="padding-top: 20px;height: 84vh;">
+    <div dir="rtl">
+        <!-- <button class="close" (click)="closePopUp()">חזרה</button> -->
+        <span class="boldText" (click)="closePopUp()">חזרה</span>
+    </div>
+    <div class="searchCarsContainer" dir="rtl">
+        <div class="flexContainer" style="flex-direction: row;justify-content: space-evenly;width: 80%;height: 50px;margin-top: 15px;">
+                <div style="width: 70%;">
+                    <input class="logo input" type="text" placeholder="חיפוש" [(ngModel)]="searchText" style="margin-top: 4px;width: 80%;">
+                </div>
+                <div style="width: 30%;height: 47px;">
+                    <img style="height: inherit;margin-top: 4px;margin-right: 14px;" src="../../assets/filter.png" (click)="changeFiltersView()">
+                </div>
+                <!-- <input type="button" (click)="openFilters()" style="background-image: url(../../assets/filter.png) no-repeat right top;"> -->
+        </div>
+        <div class="filters" [ngClass]="!this.showFilters?'hidden':'visible'">
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/tesla.png" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/hyundai.gif" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/kia.png" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/byd.png" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/tesla.png" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/hyundai.gif" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/kia.png" alt="">
+            </div>
+            <div class="filter" style="display: flex;">
+                <img style="margin: auto;" src="../../assets/Branding/byd.png" alt="">
+            </div>
+        </div>
+        <div class="allCarContainer">
+            <div *ngFor="let company of company2Cars | keyvalue">
+                <div dir="rtl">
+                    <h1 style="margin-right: 10px;">{{company.key}}</h1>
+                    <div class="flexContainer carousel" style="overflow-y: scroll;
+                    height: 30vh;">
+                        <div *ngFor="let car of company.value">
+                            <app-car-card [car]="car" class="searchCarCard" (click)="openCarInfoDialog(car)"></app-car-card>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flexContainer">
+    <div class="logo homeButton compareButton">
+        <button class="searchButton">להשוואה</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+img{
+    width: 140px;
+    float: right;
+}
+
+.star{
+    height: 16px;
+    width: auto;
+    margin-left: 5px;
+}

@@ -1,0 +1,10 @@
+<div>
+    <p style="font-weight: bold;">{{car.Model}}</p>
+    <!-- <p>Price {{car.Price}}</p> -->
+    <!-- <p>Battery Range: {{car.BatteryRange}}</p> -->
+    <!-- <p>{{car.ImagePath}}</p> -->
+    <p style="font-weight: bold;margin-bottom: 0;">{{car.Rank}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img class="star" *ngIf="car.Rank" src='../../assets/star.png' alt="{{car.Rank}}"> </p>
+    <!-- <p>Buy Here: {{car.OrderLink}}</p> -->
+    <img src='{{car.ImagePath}}' alt="">
+</div>

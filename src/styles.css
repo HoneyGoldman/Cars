@@ -1,0 +1,229 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.carCard {
+    border: 1px solid black;
+    margin: 5px;
+    width: 30%;
+    border-radius: 7px;
+    box-shadow: 4px 4px 3px #aaaaaa;
+    background: linear-gradient(45deg, white, blue);
+}
+
+.carCard:hover {
+    scale: 1.01;
+    transition: 0.35ms;
+    box-shadow: 7px 7px 3px #aaaaaa
+}
+
+.logo {
+    width: 50%;
+    margin: auto;
+}
+
+
+.input {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    margin-top: 45px;
+    width: 63%;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input,
+textarea {
+    color: #777777;
+    height: 26px;
+    font-size: 24px;
+}
+
+.ariel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boldText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+button {
+    border: 1px solid grey;
+    border-radius: 14px;
+}
+
+.homeButton {
+    font-size: 19px;
+    width: 121px;
+    padding: 4px 0 4px 0px;
+    border-radius: 29px;
+    background-color: #fafafa;
+}
+
+.compareButton{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 44px;
+    font-weight: bold;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    padding: 0;
+}
+.carLogo {
+    height: 26px;
+}
+
+.carImage {
+    height: auto;
+    max-width: 108%;
+    bottom: -3px;
+    position: relative;
+    inset-inline-end: -17px;
+}
+
+.homeCar {
+    border-radius: 24px;
+    padding: 10px;
+    height: 70%;
+
+}
+
+app-car-home-card[dir="ltr"] .homeCar {
+    background-image: linear-gradient(-45deg, #f0f0f0 33%, #8bead4);
+}
+
+app-car-home-card[dir="rtl"] .homeCar {
+    background-image: linear-gradient(45deg, #f0f0f0 33%, #8bead4);
+}
+
+.thinText {
+    font-size: small;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+.searchPopUp {
+    display: block;
+}
+
+.searchButton{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: larger;
+    border-radius: 50px;
+}
+.searchCarsContainer {
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+    margin: auto;
+    height: 100vh;
+}
+
+.searchCarCard {
+    /* background-image: linear-gradient(38deg, #f0f0f0 14%, #0f0f0f); */
+    border-radius: 18%;
+    padding: 10%;
+    height: 56%;
+    margin-bottom: 50px;
+    /* box-shadow: 0 5px 0px 0px #d3d3d3ad; */
+    margin: 0 15px 0 0;
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.searchCarCard:hover {
+    scale: 1.01;
+    transition: 0.35ms;
+    box-shadow: 7px 7px 3px #aaaaaa
+}
+
+.allCarContainer{
+    overflow: scroll;
+    height: 100vh;
+}
+.spacer {
+    width: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(53, 53, 53);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a;
+}
+
+.close {
+    cursor: pointer;
+    right: 0%;
+    padding: 5px 17px;
+    transform: translate(0%, -50%);
+    margin: 11px;
+}
+
+.carousel {
+    width: max-content;
+}
+.twoCarsContainer{
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: space-evenly;
+    background-image: linear-gradient(white 49%,#d2c4c47d 75%,white 94%);
+    border-radius: 8px;
+    
+}
+@media screen and (max-width: 600px) {
+
+    .flexContainer {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .carCard {
+        width: 100%;
+        margin: 13px 0px 0px 0px;
+    }
+
+    .carousel {
+        width: unset
+    }
+
+}

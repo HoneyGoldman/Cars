@@ -1,0 +1,22 @@
+.filters{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 10px;
+}
+
+.filter{
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 70px;
+    margin: 5px;
+}
+
+.filter > img{
+    height: inherit;
+    max-width: 70px;
+    padding: 0%;
+    width: inherit;
+    max-height: 70px;
+}
