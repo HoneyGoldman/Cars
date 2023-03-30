@@ -1,3 +1,7 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@angular/cdk/overlay-prebuilt.css";
+
+
 .flexContainer {
     display: flex;
     justify-content: center;
@@ -69,7 +73,7 @@ button {
     background-color: #fafafa;
 }
 
-.compareButton{
+.compareButton {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -81,6 +85,7 @@ button {
     width: 60%;
     padding: 0;
 }
+
 .carLogo {
     height: 26px;
 }
@@ -129,7 +134,7 @@ app-car-home-card[dir="rtl"] .homeCar {
     display: block;
 }
 
-.searchButton{
+.searchButton {
     width: 100%;
     background-color: black;
     color: white;
@@ -137,6 +142,7 @@ app-car-home-card[dir="rtl"] .homeCar {
     font-size: larger;
     border-radius: 50px;
 }
+
 .searchCarsContainer {
     background-color: white;
     border-radius: 50px 50px 0 0;
@@ -154,7 +160,8 @@ app-car-home-card[dir="rtl"] .homeCar {
     /* box-shadow: 0 5px 0px 0px #d3d3d3ad; */
     margin: 0 15px 0 0;
     display: block;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #0f0f0f33;
 }
 
 .searchCarCard:hover {
@@ -163,10 +170,11 @@ app-car-home-card[dir="rtl"] .homeCar {
     box-shadow: 7px 7px 3px #aaaaaa
 }
 
-.allCarContainer{
+.allCarContainer {
     overflow: scroll;
     height: 100vh;
 }
+
 .spacer {
     width: 10px;
 }
@@ -202,15 +210,29 @@ app-car-home-card[dir="rtl"] .homeCar {
 .carousel {
     width: max-content;
 }
-.twoCarsContainer{
+
+.twoCarsContainer {
     flex-direction: row;
     margin-top: 16px;
     justify-content: space-evenly;
-    background-image: linear-gradient(white 49%,#d2c4c47d 75%,white 94%);
+    background-image: linear-gradient(white 49%, #d2c4c47d 75%, white 94%);
     border-radius: 8px;
-    
 }
+
+.carImage{
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
 @media screen and (max-width: 600px) {
+    p{
+        max-width: 100px;
+    }
+    .carImage{
+        width: unset !important;
+    }
 
     .flexContainer {
         width: auto;

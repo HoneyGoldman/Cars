@@ -2,6 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Car } from 'src/Model/Car';
 import { CarInfoComponent } from '../car-info/car-info.component';
+import { DataServiceComponent } from '../data-service/data-service.component';
 
 @Component({
   selector: 'app-search',
@@ -11,40 +12,47 @@ import { CarInfoComponent } from '../car-info/car-info.component';
 export class SearchComponent implements OnInit {
   @Output()
   close = new EventEmitter<string>();
-  searchText=''
-  company2Cars:Map<string,Car[]> = new Map();
-  tesla:Car = new Car()
-  ionic:Car = new Car()
+  searchText = ''
+  company2Cars: Map<string, Car[]> = new Map();
+  tesla: Car = new Car()
+  ionic: Car = new Car()
   showFilters = false;
-  constructor(public dialog: MatDialog) { }
-  
+  constructor(public dialog: MatDialog, private data: DataServiceComponent) { }
+
   ngOnInit(): void {
-    this.tesla.logo  ='../../assets/Branding/tesla.png'
-    this.tesla.Model ='Dual Motor'
+    this.tesla.logo = '../../assets/Branding/tesla.png'
+    this.tesla.Model = 'Dual Motor'
     this.tesla.year = 2023
-    this.tesla.Company ='טסלה מודל 3'
+    this.tesla.Company = 'טסלה מודל 3'
+    this.tesla.BatteryRange = '320 ק"מ'
+    this.tesla.OrderLink = 'https://www.tesla.com/model3'
+    this.tesla.Price = '320,000 ILS'
     this.tesla.ImagePath = '../../assets/cars/tesla_m s 23.png'
     this.ionic.logo = '../../assets/Branding/hyundai.gif'
-    this.ionic.Model ='Sport Edition'
+    this.ionic.Model = 'Sport Edition'
     this.ionic.year = 2023
     this.ionic.Company = 'קיה EV6'
-    this.tesla.Rank='4.5'
+    this.tesla.Rank = '4.5'
     this.ionic.ImagePath = '../../assets/cars/ioniq 5 23.jpg'
-    this.company2Cars.set('Hyundai',[this.ionic,this.ionic,this.ionic,this.ionic])
-    this.company2Cars.set('Tesla',[this.tesla,this.tesla,this.tesla,this.tesla,this.tesla,this.tesla,this.tesla])
+    this.company2Cars.set('Hyundai', [this.ionic, this.ionic, this.ionic, this.ionic])
+    this.company2Cars.set('Tesla', [this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla])
   }
 
 
-  closePopUp(){
+  closePopUp() {
     this.close.emit('close')
   }
 
-  changeFiltersView(){
+  changeFiltersView() {
     this.showFilters = !this.showFilters
   }
-  
 
-  openCarInfoDialog(car:Car){
-    this.dialog.open(CarInfoComponent)
+
+  openCarInfoDialog(car: Car) {
+    this.dialog.open(CarInfoComponent, {disableClose: false,
+      data: {
+        injectedCar: car
+      }
+    }).updateSize('80%','80%')
   }
 }

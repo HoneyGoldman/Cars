@@ -1,1 +1,25 @@
-<p>car-info works!</p>
+<div dir="rtl">
+    <div style="margin: 15px;">
+        <button mat-button mat-dialog-close class="close-button" style="min-width: 23px;">X</button>
+    </div>
+    <h2 mat-dialog-title><img class="star" style="height: 30px;" *ngIf="car.logo"
+            src={{car.logo}}><b>{{car.Company}}</b>&nbsp;{{car.Model}}</h2>
+    <div class="flexContainer" style="width: 70%;" dir="ltr">
+        <div>
+            <img class="carImage" src={{car.ImagePath}} alt="{{car.Rank}}">
+        </div>
+        <div>
+            <mat-dialog-content dir="rtl">
+                <p>שנה: <b> {{car.year}}</b></p>
+                <p *ngIf="car.Rank">דירוג:<img class="star" src='../../assets/star.png' alt="{{car.Rank}}"><b>{{car.Rank}}</b></p>
+                <p>שנה:<b>{{car.year}}</b></p>
+                <p>טווח סוללה:<b>{{car.BatteryRange}}</b></p>
+                <p>מחיר:<b>{{car.Price}}</b></p>
+                <p>לאתר החברה:<b>{{car.OrderLink}}</b></p>
+            </mat-dialog-content>
+        </div>
+    </div>
+</div>
+<mat-dialog-actions class="flexContainer downCompareBar">
+    <button class="infoComparButton">הוסף להשוואה</button>
+</mat-dialog-actions>

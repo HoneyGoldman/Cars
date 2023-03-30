@@ -1,0 +1,23 @@
+.infoComparButton {
+    padding: 7px;
+    color: white;
+    background-color: black;
+    font-size: initial;
+    float: left;
+}
+
+.downCompareBar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.img{
+    width: 140px;
+}
+
+.star{
+    height: 16px;
+    width: auto;
+    margin-left: 5px;
+}

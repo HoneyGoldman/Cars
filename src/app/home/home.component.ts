@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from 'src/Model/Car';
+import { DataServiceComponent } from '../data-service/data-service.component';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent implements OnInit {
   cars:Car[]=[]
   searchText:string = ''
   carsView:boolean = false
-  constructor() { }
+  constructor(private data:DataServiceComponent) { }
 
   ngOnInit(): void {
     let car:Car= new Car();
