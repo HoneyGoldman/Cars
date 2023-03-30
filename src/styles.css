@@ -228,7 +228,7 @@ app-car-home-card[dir="rtl"] .homeCar {
 
 @media screen and (max-width: 600px) {
     p{
-        max-width: 100px;
+        max-width: 150px;
     }
     .carImage{
         width: unset !important;
