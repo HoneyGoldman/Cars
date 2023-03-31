@@ -17,6 +17,7 @@ export class SearchComponent implements OnInit {
   tesla: Car = new Car()
   ionic: Car = new Car()
   showFilters = false;
+  comparingCarArr:Car[]=[]
   constructor(public dialog: MatDialog, private data: DataServiceComponent) { }
 
   ngOnInit(): void {
@@ -36,6 +37,16 @@ export class SearchComponent implements OnInit {
     this.ionic.ImagePath = '../../assets/cars/ioniq 5 23.jpg'
     this.company2Cars.set('Hyundai', [this.ionic, this.ionic, this.ionic, this.ionic])
     this.company2Cars.set('Tesla', [this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla])
+    this.data.carEmmiter.subscribe(car=>{
+      console.log('choose car '+JSON.stringify(car))
+      if(this.comparingCarArr.length===2){
+        this.comparingCarArr[0] = this.comparingCarArr[1]
+        this.comparingCarArr[1] = car 
+      }
+      else{
+        this.comparingCarArr.push(car)
+      }
+    })
   }
 
 

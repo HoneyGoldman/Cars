@@ -13,6 +13,14 @@
                 </div>
                 <!-- <input type="button" (click)="openFilters()" style="background-image: url(../../assets/filter.png) no-repeat right top;"> -->
         </div>
+        <div *ngIf="comparingCarArr.length>=1" class="flexContainer">
+            <div>
+                <app-car-card [car]="comparingCarArr[0]" class="searchCarCard"></app-car-card>
+            </div>
+            <div *ngIf="comparingCarArr.length==2">
+                <app-car-card [car]="comparingCarArr[1]" class="searchCarCard"></app-car-card>
+            </div>
+        </div>
         <div class="filters" [ngClass]="!this.showFilters?'hidden':'visible'">
             <div class="filter" style="display: flex;">
                 <img style="margin: auto;" src="../../assets/Branding/tesla.png" alt="">
