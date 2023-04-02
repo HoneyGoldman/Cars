@@ -1,0 +1,9 @@
+<div class="searchCarCard greebBackground" *ngIf="car">
+    <p>{{car.Model}}</p>
+    <p>{{car.year}}</p>
+    <img class="carImage" src={{car.ImagePath}}>
+</div>
+
+<div class="searchCarCard emptyCard" *ngIf="!car">
+    <p>רכב 2</p>
+</div>

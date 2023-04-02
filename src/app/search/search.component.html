@@ -13,12 +13,16 @@
                 </div>
                 <!-- <input type="button" (click)="openFilters()" style="background-image: url(../../assets/filter.png) no-repeat right top;"> -->
         </div>
-        <div *ngIf="comparingCarArr.length>=1" class="flexContainer">
-            <div>
-                <app-car-card [car]="comparingCarArr[0]" class="searchCarCard"></app-car-card>
+        <div [ngClass]="comparingCarArr.length==0?'hidden':'visible'" class="flexContainer" style="flex-direction: row;">
+            <div class="textDiv" [ngClass]="comparingCarArr.length>1 && comparingCarArr.length<2?'hidden':'visible'">נותר עוד רכב אחד לבחירה</div>
+            <div class="compareContainer">
+                <app-comparing-car-card [car]="comparingCarArr[0]"></app-comparing-car-card>
             </div>
-            <div *ngIf="comparingCarArr.length==2">
-                <app-car-card [car]="comparingCarArr[1]" class="searchCarCard"></app-car-card>
+            <!-- <div class="compareContainer" [ngClass]="comparingCarArr.length!=2?'hidden':'visible'">
+                <app-comparing-car-card></app-comparing-car-card>
+            </div> -->
+            <div class="compareContainer visible">
+                <app-comparing-car-card [car]="comparingCarArr[1]"></app-comparing-car-card>
             </div>
         </div>
         <div class="filters" [ngClass]="!this.showFilters?'hidden':'visible'">

@@ -17,6 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { DataServiceComponent } from './data-service/data-service.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { ComparingCarCardComponent } from './comparing-car-card/comparing-car-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import {MatButtonModule} from '@angular/material/button';
     CarHomeCardComponent,
     SearchComponent,
     CarInfoComponent,
-    DataServiceComponent
+    DataServiceComponent,
+    ComparingCarCardComponent
   ],
   imports: [
     BrowserModule,

@@ -226,7 +226,15 @@ app-car-home-card[dir="rtl"] .homeCar {
     margin: auto;
 }
 
+.compareContainer{
+    width: 30%;
+}
+
 @media screen and (max-width: 600px) {
+
+    .compareContainer{
+        width: 50%;
+    }
     p{
         max-width: 150px;
     }
