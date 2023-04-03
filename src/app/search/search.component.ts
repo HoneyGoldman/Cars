@@ -66,4 +66,10 @@ export class SearchComponent implements OnInit {
       }
     }).updateSize('80%','80%')
   }
+
+
+  compare(){
+    console.log('comparing!')
+  }
+
 }

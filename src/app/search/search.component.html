@@ -70,6 +70,6 @@
 
 <div class="flexContainer">
     <div class="logo homeButton compareButton">
-        <button class="searchButton">להשוואה</button>
+        <button class="searchButton" disabled="{{comparingCarArr.length===2}}" (click)="compare()">להשוואה</button>
     </div>
 </div>
