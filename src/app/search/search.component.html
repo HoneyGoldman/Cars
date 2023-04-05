@@ -16,12 +16,15 @@
         <div [ngClass]="comparingCarArr.length==0?'hidden':'visible'" class="flexContainer" style="flex-direction: row;">
             <div class="textDiv" [ngClass]="comparingCarArr.length>1 && comparingCarArr.length<2?'hidden':'visible'">נותר עוד רכב אחד לבחירה</div>
             <div class="compareContainer">
+                <mat-icon class="icon">remove_circle</mat-icon>
                 <app-comparing-car-card [car]="comparingCarArr[0]"></app-comparing-car-card>
+                
             </div>
             <!-- <div class="compareContainer" [ngClass]="comparingCarArr.length!=2?'hidden':'visible'">
                 <app-comparing-car-card></app-comparing-car-card>
             </div> -->
-            <div class="compareContainer visible">
+            <div class="compareContainer visible"  dir="rtl">
+                <mat-icon class="icon" *ngIf="comparingCarArr[1]">remove_circle_outline</mat-icon>
                 <app-comparing-car-card [car]="comparingCarArr[1]"></app-comparing-car-card>
             </div>
         </div>
@@ -70,6 +73,6 @@
 
 <div class="flexContainer">
     <div class="logo homeButton compareButton">
-        <button class="searchButton" disabled="{{comparingCarArr.length===2}}" (click)="compare()">להשוואה</button>
+        <button class="searchButton" [ngClass]="comparingCarArr.length==2?'enabled':'disabled'" disabled="{{comparingCarArr.length===2}}" (click)="compare()">להשוואה</button>
     </div>
 </div>

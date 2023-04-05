@@ -1,6 +1,6 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "~@angular/cdk/overlay-prebuilt.css";
-
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 .flexContainer {
     display: flex;
@@ -233,7 +233,7 @@ app-car-home-card[dir="rtl"] .homeCar {
 @media screen and (max-width: 600px) {
 
     .compareContainer{
-        width: 50%;
+        width: 47%;
     }
     p{
         max-width: 150px;
