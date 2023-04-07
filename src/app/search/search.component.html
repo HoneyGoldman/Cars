@@ -6,25 +6,21 @@
     <div class="searchCarsContainer" dir="rtl">
         <div class="flexContainer" style="flex-direction: row;justify-content: space-evenly;width: 80%;height: 50px;margin-top: 15px;">
                 <div style="width: 70%;">
-                    <input class="logo input" type="text" placeholder="חיפוש" [(ngModel)]="searchText" style="margin-top: 4px;width: 80%;">
+                    <input class="logo input" type="text" placeholder="חיפוש" [(ngModel)]="searchText" style="margin-top: 4px;width: 80%;" (keyup)="filter()">
                 </div>
                 <div style="width: 30%;height: 47px;">
                     <img style="height: inherit;margin-top: 4px;margin-right: 14px;" src="assets/filter.png" (click)="changeFiltersView()">
                 </div>
-                <!-- <input type="button" (click)="openFilters()" style="background-image: url(assets/filter.png) no-repeat right top;"> -->
         </div>
-        <div [ngClass]="comparingCarArr.length==0?'hidden':'visible'" class="flexContainer" style="flex-direction: row;">
+        <div [ngClass]="comparingCarArr.length===0?'hidden':'visible'" class="flexContainer" style="flex-direction: row;">
             <div class="textDiv" [ngClass]="comparingCarArr.length>1 && comparingCarArr.length<2?'hidden':'visible'">נותר עוד רכב אחד לבחירה</div>
             <div class="compareContainer">
-                <mat-icon class="icon">remove_circle</mat-icon>
+                <mat-icon class="icon" *ngIf="comparingCarArr[0]" (click)="removeCar(0)">remove_circle</mat-icon>
                 <app-comparing-car-card [car]="comparingCarArr[0]"></app-comparing-car-card>
                 
             </div>
-            <!-- <div class="compareContainer" [ngClass]="comparingCarArr.length!=2?'hidden':'visible'">
-                <app-comparing-car-card></app-comparing-car-card>
-            </div> -->
             <div class="compareContainer visible"  dir="rtl">
-                <mat-icon class="icon" *ngIf="comparingCarArr[1]">remove_circle_outline</mat-icon>
+                <mat-icon class="icon" *ngIf="comparingCarArr[1]" (click)="removeCar(1)">remove_circle</mat-icon>
                 <app-comparing-car-card [car]="comparingCarArr[1]"></app-comparing-car-card>
             </div>
         </div>
@@ -55,7 +51,7 @@
             </div>
         </div>
         <div class="allCarContainer">
-            <div *ngFor="let company of company2Cars | keyvalue">
+            <div *ngFor="let company of shownData | keyvalue">
                 <div dir="rtl">
                     <h1 style="margin-right: 10px;">{{company.key}}</h1>
                     <div class="flexContainer carousel" style="overflow-y: scroll;
