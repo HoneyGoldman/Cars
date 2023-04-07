@@ -9,9 +9,9 @@
                     <input class="logo input" type="text" placeholder="חיפוש" [(ngModel)]="searchText" style="margin-top: 4px;width: 80%;">
                 </div>
                 <div style="width: 30%;height: 47px;">
-                    <img style="height: inherit;margin-top: 4px;margin-right: 14px;" src="../../assets/filter.png" (click)="changeFiltersView()">
+                    <img style="height: inherit;margin-top: 4px;margin-right: 14px;" src="assets/filter.png" (click)="changeFiltersView()">
                 </div>
-                <!-- <input type="button" (click)="openFilters()" style="background-image: url(../../assets/filter.png) no-repeat right top;"> -->
+                <!-- <input type="button" (click)="openFilters()" style="background-image: url(assets/filter.png) no-repeat right top;"> -->
         </div>
         <div [ngClass]="comparingCarArr.length==0?'hidden':'visible'" class="flexContainer" style="flex-direction: row;">
             <div class="textDiv" [ngClass]="comparingCarArr.length>1 && comparingCarArr.length<2?'hidden':'visible'">נותר עוד רכב אחד לבחירה</div>
@@ -30,28 +30,28 @@
         </div>
         <div class="filters" [ngClass]="!this.showFilters?'hidden':'visible'">
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/tesla.png" alt="">
+                <img style="margin: auto;" src="assets/Branding/tesla.png" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/hyundai.gif" alt="">
+                <img style="margin: auto;" src="assets/Branding/hyundai.gif" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/kia.png" alt="">
+                <img style="margin: auto;" src="assets/Branding/kia.png" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/byd.png" alt="">
+                <img style="margin: auto;" src="assets/Branding/byd.png" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/tesla.png" alt="">
+                <img style="margin: auto;" src="assets/Branding/tesla.png" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/hyundai.gif" alt="">
+                <img style="margin: auto;" src="assets/Branding/hyundai.gif" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/kia.png" alt="">
+                <img style="margin: auto;" src="assets/Branding/kia.png" alt="">
             </div>
             <div class="filter" style="display: flex;">
-                <img style="margin: auto;" src="../../assets/Branding/byd.png" alt="">
+                <img style="margin: auto;" src="assets/Branding/byd.png" alt="">
             </div>
         </div>
         <div class="allCarContainer">

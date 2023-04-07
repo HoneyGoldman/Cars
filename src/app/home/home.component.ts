@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     let car:Car= new Car();
     car.BatteryRange='100Km'
     car.Company='Tesla'
-    car.ImagePath='../../assets/tesla-model-s-2017.jpg'
+    car.ImagePath='assets/tesla-model-s-2017.jpg'
     car.Model='S'
     car.OrderLink='Link'
     car.Price='250,000 ILS'
