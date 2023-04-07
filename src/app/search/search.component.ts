@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Car } from 'src/Model/Car';
 import { CarInfoComponent } from '../car-info/car-info.component';
 import { DataServiceComponent } from '../data-service/data-service.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -18,8 +19,8 @@ export class SearchComponent implements OnInit {
   tesla: Car = new Car()
   ionic: Car = new Car()
   showFilters = false;
-  comparingCarArr:Car[]=[]
-  constructor(public dialog: MatDialog, private data: DataServiceComponent) { }
+  comparingCarArr: Car[] = []
+  constructor(public dialog: MatDialog, private data: DataServiceComponent, private router: Router) { }
 
   ngOnInit(): void {
     this.tesla.logo = 'assets/Branding/tesla.png'
@@ -38,17 +39,18 @@ export class SearchComponent implements OnInit {
     this.ionic.ImagePath = 'assets/cars/ioniq 5 23.jpg'
     this.company2Cars.set('Hyundai', [this.ionic, this.ionic, this.ionic, this.ionic])
     this.company2Cars.set('Tesla', [this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla])
-    this.data.carEmmiter.subscribe(car=>{
-      console.log('choose car '+JSON.stringify(car))
-      if(this.comparingCarArr.length===2){
+    this.data.carEmmiter.subscribe(car => {
+      console.log('choose car ' + JSON.stringify(car))
+      if (this.comparingCarArr.length === 2) {
         this.comparingCarArr[0] = this.comparingCarArr[1]
-        this.comparingCarArr[1] = car 
+        this.comparingCarArr[1] = car
       }
-      else{
+      else {
         this.comparingCarArr.push(car)
       }
     })
     this.shownData = this.company2Cars
+    this.comparingCarArr = this.data.comparingArray
   }
 
 
@@ -64,45 +66,50 @@ export class SearchComponent implements OnInit {
 
 
   openCarInfoDialog(car: Car) {
-    this.dialog.open(CarInfoComponent, {disableClose: false,
+    this.dialog.open(CarInfoComponent, {
+      disableClose: false,
       data: {
         injectedCar: car
       }
-    }).updateSize('80%','80%')
+    }).updateSize('80%', '80%')
   }
 
 
-  compare(){
-    console.log('comparing!')
+  compare() {
+    if (this.comparingCarArr.length === 2) {
+      this.data.comparingArray = this.comparingCarArr
+      this.router.navigateByUrl('results')
+    }
   }
 
-  removeCar(index:number){
-      this.comparingCarArr.splice(index,1)
-      console.log(this.comparingCarArr)
+  removeCar(index: number) {
+    this.comparingCarArr.splice(index, 1)
+    console.log(this.comparingCarArr)
   }
 
-  filter(){
+  filter() {
     let results: Map<string, Car[]> = new Map();
-    this.company2Cars.forEach((cars:Car[],company:string) => {
-      let carArray:Car[]=[]
-        cars.forEach(car=>{
-          if(car.Company?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
+    this.company2Cars.forEach((cars: Car[], company: string) => {
+      let carArray: Car[] = []
+      cars.forEach(car => {
+        if (car.Company?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
           car.Model?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
           String(car.year).toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase())
-          ){
-            carArray.push(car)
-          }
-          if(carArray.length !==0){
-            results.set(company,carArray);
-          }
-        });
+        ) {
+          carArray.push(car)
+        }
+        if (carArray.length !== 0) {
+          results.set(company, carArray);
+        }
+      });
     });
     this.shownData = results
   }
 
-  filterByCompany(company:string){
+  filterByCompany(company: string) {
     this.searchText = company
     this.filter()
   }
+
 
 }

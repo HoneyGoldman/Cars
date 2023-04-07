@@ -18,6 +18,7 @@ import { DataServiceComponent } from './data-service/data-service.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ComparingCarCardComponent } from './comparing-car-card/comparing-car-card.component';
+import { ResultsPageComponent } from './results-page/results-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ComparingCarCardComponent } from './comparing-car-card/comparing-car-ca
     SearchComponent,
     CarInfoComponent,
     DataServiceComponent,
-    ComparingCarCardComponent
+    ComparingCarCardComponent,
+    ResultsPageComponent
   ],
   imports: [
     BrowserModule,

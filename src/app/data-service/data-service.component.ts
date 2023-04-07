@@ -26,4 +26,5 @@ export class DataServiceComponent {
     this.carEmmiter.emit(car)
   }
 
+  public comparingArray:Car[]=[]
 }
