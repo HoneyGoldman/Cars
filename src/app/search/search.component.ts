@@ -57,6 +57,8 @@ export class SearchComponent implements OnInit {
   }
 
   changeFiltersView() {
+    this.searchText = ''
+    this.filter()
     this.showFilters = !this.showFilters
   }
 
@@ -96,6 +98,11 @@ export class SearchComponent implements OnInit {
         });
     });
     this.shownData = results
+  }
+
+  filterByCompany(company:string){
+    this.searchText = company
+    this.filter()
   }
 
 }
