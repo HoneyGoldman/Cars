@@ -10,11 +10,19 @@ import { DataServiceComponent } from '../data-service/data-service.component';
 })
 export class ResultsPageComponent implements OnInit {
   cars:Car[]=[];
+  winner:Car=new Car()
+  loser:Car=new Car()
   constructor(private data:DataServiceComponent){}
 
   ngOnInit(): void {
     this.cars=this.data.comparingArray
+    this.calculateWinner();
     console.log(this.cars)
+  }
+
+  calculateWinner(){
+    this.winner = this.cars[0]
+    this.loser = this.cars[1]
   }
 
 }

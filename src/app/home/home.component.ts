@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from 'src/Model/Car';
 import { DataServiceComponent } from '../data-service/data-service.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
   cars:Car[]=[]
   searchText:string = ''
   carsView:boolean = false
-  constructor(private data:DataServiceComponent) { }
+  constructor(private data:DataServiceComponent,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     let car:Car= new Car();
@@ -25,6 +26,11 @@ export class HomeComponent implements OnInit {
     for (let index = 0; index < 25; index++) {
       this.cars.push(car);
     }
+    this.route.queryParams.subscribe(params=>{
+      if(params.search){
+        this.changeCarsView()
+      }
+    })
   }
 
   changeCarsView(){
