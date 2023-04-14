@@ -1,12 +1,26 @@
 <div dir="rtl">
     <div class="flexContainer" style="flex-direction: row;justify-content: space-between;">
-        <div class="boldText" [routerLink]="['']" [queryParams]="{search: true}">&nbsp;חזור</div>
-        <div class="boldText">נוקאאוט</div>
+        <div class="boldText" [routerLink]="['']" [queryParams]="{search: true}">&nbsp;חזרה</div>
+        <div class="boldText" style="font-size: x-large;;">נוקאאוט</div>
         <div></div>
     </div>
-    <div class="flexContainer" style="flex-direction: row;justify-content: space-between;">
-        <div class="winner">
-            <p>{{winner.Model}}</p>
+    <div class="flexContainer" style="flex-direction: row;justify-content: space-between;margin-top: 15px;">
+        <div class="winner" style="width: 50%;height: 30vh;">
+            <app-results-car-card dir="ltr" [car]="winner" class="resultsCard"></app-results-car-card>
+        </div>
+        <div class="looser" style="width: 50%;height: 30vh;">
+            <app-results-car-card dir="rtl" [car]="loser" class="resultsCard"></app-results-car-card>
+        </div>
+    </div>
+    <div class="buttonsContainer flexContainer" style="flex-direction: row;justify-content: space-around;">
+        <div>
+            כללי
+        </div>
+        <div>
+            כללי
+        </div>
+        <div>
+            כללי
         </div>
     </div>
 </div>

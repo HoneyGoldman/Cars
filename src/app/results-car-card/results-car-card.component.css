@@ -1,0 +1,17 @@
+img{
+    width: 140px;
+    float: right;
+}
+
+.star{
+    height: 16px;
+    width: auto;
+    margin-left: 5px;
+}
+
+.background{
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    border-radius:  0 0  0 5px;
+}
