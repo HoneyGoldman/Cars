@@ -1,0 +1,25 @@
+<div class="innerText" style="margin-top: 100px;" *ngIf="!winner">
+    <div>
+        {{car?.company}} {{car?.model}}
+    </div>
+    <div style="font-size: larger;padding: 10px;">
+        {{totalRank}}
+    </div>
+    נק'
+</div>
+<div class="innerText" style="margin-top: 100px;" *ngIf="winner">
+    <div style="
+        margin: auto;
+        height: max-content;">
+        <div class="innerText">
+            {{car?.company}} {{car?.model}}
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <div class="greenFocus"></div>
+        </div>
+    </div>
+    <div style="font-size: larger;padding: 10px;">
+        {{totalRank}}
+    </div>
+    נק'
+</div>

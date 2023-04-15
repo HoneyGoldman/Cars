@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ComparingCarCardComponent } from './comparing-car-card/comparing-car-card.component';
 import { ResultsPageComponent } from './results-page/results-page.component';
 import { ResultsCarCardComponent } from './results-car-card/results-car-card.component';
+import { ResultCardComponent } from './result-card/result-card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ResultsCarCardComponent } from './results-car-card/results-car-card.com
     DataServiceComponent,
     ComparingCarCardComponent,
     ResultsPageComponent,
-    ResultsCarCardComponent
+    ResultsCarCardComponent,
+    ResultCardComponent
   ],
   imports: [
     BrowserModule,

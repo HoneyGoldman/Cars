@@ -1,0 +1,21 @@
+.focus {
+    background: transparent;
+    border-radius: 10px;
+    height: 4px;
+    padding: 0px 20px 0px 20px;
+    box-shadow: 0 25px 0 0 #000;
+    text-align: center;
+}
+.greenFocus {
+    width: 30%;
+    height: 4px;
+    box-shadow: 0 4px 0 0 #8bead4;
+    border-radius: 5px;
+}
+.innerText {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+

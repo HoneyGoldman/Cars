@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
   company2Cars: Map<string, Car[]> = new Map();
   shownData: Map<string, Car[]> = new Map();
   tesla: Car = new Car()
-  ionic: Car = new Car()
+  ev6: Car = new Car()
   showFilters = false;
   comparingCarArr: Car[] = []
   constructor(public dialog: MatDialog, private data: DataServiceComponent, private router: Router) { }
@@ -32,14 +32,14 @@ export class SearchComponent implements OnInit {
     this.tesla.orderLink = 'https://www.tesla.com/model3'
     this.tesla.price = 320000
     this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png'
-    this.ionic.logo = 'assets/Branding/hyundai.gif'
-    this.ionic.model = 'EV6'
-    this.ionic.subModel ='Sport Edition'
-    this.ionic.year = 2023
-    this.ionic.company = 'Hyundai'
+    this.ev6.logo = 'assets/Branding/kia.png'
+    this.ev6.model = 'EV6'
+    this.ev6.subModel ='Sport Edition'
+    this.ev6.year = 2023
+    this.ev6.company = 'KIA'
     this.tesla.Rank = '4.5'
-    this.ionic.ImagePath = 'assets/cars/kia ev6 23.png'
-    this.company2Cars.set('Hyundai', [this.ionic, this.ionic, this.ionic, this.ionic])
+    this.ev6.ImagePath = 'assets/cars/kia ev6 23.png'
+    this.company2Cars.set('KIA', [this.ev6, this.ev6, this.ev6, this.ev6])
     this.company2Cars.set('Tesla', [this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla])
     this.data.carEmmiter.subscribe(car => {
       console.log('choose car ' + JSON.stringify(car))

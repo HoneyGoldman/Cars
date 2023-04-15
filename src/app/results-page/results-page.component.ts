@@ -10,8 +10,9 @@ import { DataServiceComponent } from '../data-service/data-service.component';
 })
 export class ResultsPageComponent implements OnInit {
   cars:Car[]=[];
-  winnerIndex:number=0
-  loserIndex:number=1
+  winnerIndex:number=1
+  looserIndex:number=0
+  winningParameters:number = 7
   focus='general';
   totalRank=[7.5,5.2]
   constructor(private data:DataServiceComponent){}

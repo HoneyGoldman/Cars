@@ -27,26 +27,7 @@
 <div id="general" dir="rtl">
     <div class="flexContainer" style="flex-direction: row;">
         <div style="width: 33%;">
-            <div *ngIf="winnerIndex==0" style="font-weight: bold;">
-                <div style="
-                margin: auto;
-                height: max-content;">
-                    <div class="innerText">
-                        {{cars[0].company}} {{cars[0].model}}
-                    </div>
-                    <div style="display: flex;justify-content: center;">
-                        <div class="focud" style="width: 30%;
-                        height: 4px;
-                        box-shadow: 0 25px 0 0 #8bead4;
-                        border-radius: 5px;"></div>
-                    </div>
-                    
-                </div>
-
-            </div>
-            <div class="innerText"> {{totalRank[0]}} <br>
-                נק'
-            </div>
+            <app-result-card [car]="cars[0]" [totalRank]="totalRank[0]" [winner]="winnerIndex===0?true:false"></app-result-card>
         </div>
         <div style="position: fixed;
         width: 33%;
@@ -65,12 +46,12 @@
             <div class="innerText">השוואה כללית</div>
         </div>
         <div style="width: 33%;">
-            <div class="innerText">
-                {{cars[1].company}} {{cars[1].model}}
-            </div>
-           <div class="innerText"> 
-            {{totalRank[1]}} נק' 
-           </div>
+            <app-result-card [car]="cars[1]" [totalRank]="totalRank[1]" [winner]="winnerIndex===1?true:false"></app-result-card>
         </div>
     </div>
+    <div class="innerText">
+        {{cars[looserIndex].company}} {{cars[looserIndex].model}} עדיפה על  {{cars[winnerIndex].company}} {{cars[winnerIndex].model}} <br>
+        ב {{winningParameters}} פרמטרים
+    </div>
+    <hr>
 </div>

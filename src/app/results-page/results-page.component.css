@@ -1,4 +1,4 @@
-.buttonsContainer{
+.buttonsContainer {
     background-color: #f0f0f0a5;
     border: 1px solid rgb(164, 164, 164);
     border-radius: 24px;
@@ -7,7 +7,7 @@
     font-size: larger;
 }
 
-.focus{
+.focus {
     background: transparent;
     border-radius: 10px;
     height: 4px;
@@ -16,14 +16,24 @@
     text-align: center;
 }
 
-.innerText{
+.innerText {
     text-align: center;
     margin-top: 40px;
     font-weight: bold;
     font-family: sans-serif;
 }
 
-.carImage{
+.carImage {
     margin: unset;
     height: 100px;
+}
+
+
+hr{
+    height: 9px;
+    display: block;
+    background-color: #f0f0f0;
+    border: none;
+    margin-top: 30px;
+    border-radius: 6px;
 }
