@@ -6,3 +6,24 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
 }
+
+.focus{
+    background: transparent;
+    border-radius: 10px;
+    height: 4px;
+    padding: 0px 20px 0px 20px;
+    box-shadow: 0 25px 0 0 #000;
+    text-align: center;
+}
+
+.innerText{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.carImage{
+    margin: unset;
+    height: 100px;
+}

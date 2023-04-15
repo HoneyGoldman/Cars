@@ -10,8 +10,10 @@ import { DataServiceComponent } from '../data-service/data-service.component';
 })
 export class ResultsPageComponent implements OnInit {
   cars:Car[]=[];
-  winner:Car=new Car()
-  loser:Car=new Car()
+  winnerIndex:number=0
+  loserIndex:number=1
+  focus='general';
+  totalRank=[7.5,5.2]
   constructor(private data:DataServiceComponent){}
 
   ngOnInit(): void {
@@ -21,8 +23,15 @@ export class ResultsPageComponent implements OnInit {
   }
 
   calculateWinner(){
-    this.winner = this.cars[0]
-    this.loser = this.cars[1]
+
+  }
+
+  getFocus(){
+    return this.focus;
+  }
+
+  setFocus(focus:string){
+    this.focus = focus;
   }
 
 }

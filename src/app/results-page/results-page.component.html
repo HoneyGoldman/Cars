@@ -1,26 +1,76 @@
 <div dir="rtl">
     <div class="flexContainer" style="flex-direction: row;justify-content: space-between;">
         <div class="boldText" [routerLink]="['']" [queryParams]="{search: true}">&nbsp;חזרה</div>
-        <div class="boldText" style="font-size: x-large;;">נוקאאוט</div>
+        <div class="boldText" style="font-size: x-large;padding-left: 50px;">נוקאאוט</div>
         <div></div>
     </div>
     <div class="flexContainer" style="flex-direction: row;justify-content: space-between;margin-top: 15px;">
         <div class="winner" style="width: 50%;height: 30vh;">
-            <app-results-car-card dir="ltr" [car]="winner" class="resultsCard"></app-results-car-card>
+            <app-results-car-card dir="ltr" [car]="cars[1]" class="resultsCard"></app-results-car-card>
         </div>
         <div class="looser" style="width: 50%;height: 30vh;">
-            <app-results-car-card dir="rtl" [car]="loser" class="resultsCard"></app-results-car-card>
+            <app-results-car-card dir="rtl" [car]="cars[0]" class="resultsCard"></app-results-car-card>
         </div>
     </div>
     <div class="buttonsContainer flexContainer" style="flex-direction: row;justify-content: space-around;">
-        <div>
+        <div (click)="setFocus('general')" [ngClass]="getFocus()==='general'?'focus':''">
             כללי
         </div>
-        <div>
-            כללי
+        <div (click)="setFocus('tech')" [ngClass]="getFocus()==='tech'?'focus':''">
+            טכנולוגיות
         </div>
-        <div>
-            כללי
+        <div (click)="setFocus('votes')" [ngClass]="getFocus()==='votes'?'focus':''">
+            הצבעות
+        </div>
+    </div>
+</div>
+<div id="general" dir="rtl">
+    <div class="flexContainer" style="flex-direction: row;">
+        <div style="width: 33%;">
+            <div *ngIf="winnerIndex==0" style="font-weight: bold;">
+                <div style="
+                margin: auto;
+                height: max-content;">
+                    <div class="innerText">
+                        {{cars[0].company}} {{cars[0].model}}
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <div class="focud" style="width: 30%;
+                        height: 4px;
+                        box-shadow: 0 25px 0 0 #8bead4;
+                        border-radius: 5px;"></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="innerText"> {{totalRank[0]}} <br>
+                נק'
+            </div>
+        </div>
+        <div style="position: fixed;
+        width: 33%;
+        display: flex;
+        justify-content: center;">
+            <img class="carImage" style="left: 0;" [ngStyle]="totalRank[0] && totalRank[1] ?{'bottom': totalRank[0]-totalRank[1]*5+'px'}:{}" src="assets/abstractCar.png" alt="">
+            <img class="carImage" style="right: 0;" [ngStyle]="totalRank[0] && totalRank[1] ?{'bottom': totalRank[1]-totalRank[0]*5+'px'}:{}" src="assets/abstractCar.png" alt="">
+        </div>
+        <div style="width: 33%;">
+            <div style="display: flex;
+            flex-direction: column;
+            align-items: center;margin-top: 30px;">
+                <img style="width: 62%;" src="assets/finishLine.png" alt="">
+                <img style="width: 62%;height: 11vh;" src="assets/finishLineShadow.png" alt="">
+            </div>
+            <div class="innerText">השוואה כללית</div>
+        </div>
+        <div style="width: 33%;">
+            <div class="innerText">
+                {{cars[1].company}} {{cars[1].model}}
+            </div>
+           <div class="innerText"> 
+            {{totalRank[1]}} נק' 
+           </div>
         </div>
     </div>
 </div>

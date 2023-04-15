@@ -24,19 +24,21 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.tesla.logo = 'assets/Branding/tesla.png'
-    this.tesla.Model = '3 Dual Motor'
+    this.tesla.model = 'Model 3'
+    this.tesla.subModel ='Dual Motor'
     this.tesla.year = 2023
-    this.tesla.Company = 'Tesla'
-    this.tesla.BatteryRange = '320 ק"מ'
-    this.tesla.OrderLink = 'https://www.tesla.com/model3'
-    this.tesla.Price = '320,000 ILS'
+    this.tesla.company = 'Tesla'
+    this.tesla.batteryRange = 320
+    this.tesla.orderLink = 'https://www.tesla.com/model3'
+    this.tesla.price = 320000
     this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png'
     this.ionic.logo = 'assets/Branding/hyundai.gif'
-    this.ionic.Model = 'EV6 Sport Edition'
+    this.ionic.model = 'EV6'
+    this.ionic.subModel ='Sport Edition'
     this.ionic.year = 2023
-    this.ionic.Company = 'Hyundai'
+    this.ionic.company = 'Hyundai'
     this.tesla.Rank = '4.5'
-    this.ionic.ImagePath = 'assets/cars/ioniq 5 23.jpg'
+    this.ionic.ImagePath = 'assets/cars/kia ev6 23.png'
     this.company2Cars.set('Hyundai', [this.ionic, this.ionic, this.ionic, this.ionic])
     this.company2Cars.set('Tesla', [this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla])
     this.data.carEmmiter.subscribe(car => {
@@ -92,8 +94,8 @@ export class SearchComponent implements OnInit {
     this.company2Cars.forEach((cars: Car[], company: string) => {
       let carArray: Car[] = []
       cars.forEach(car => {
-        if (car.Company?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
-          car.Model?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
+        if (car.company?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
+          car.model?.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase()) ||
           String(car.year).toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase())
         ) {
           carArray.push(car)

@@ -16,12 +16,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     let car:Car= new Car();
-    car.BatteryRange='100Km'
-    car.Company='Tesla'
+    car.batteryRange=100
+    car.company='Tesla'
     car.ImagePath='assets/tesla-model-s-2017.jpg'
-    car.Model='S'
-    car.OrderLink='Link'
-    car.Price='250,000 ILS'
+    car.model='S'
+    car.orderLink='Link'
+    car.price=250000
     car.Rank = '4.5'
     for (let index = 0; index < 25; index++) {
       this.cars.push(car);
