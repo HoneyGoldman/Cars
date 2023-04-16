@@ -29,14 +29,15 @@
         <div style="width: 33%;">
             <app-result-card [car]="cars[0]" [totalRank]="totalRank[0]" [winner]="winnerIndex===0?true:false"></app-result-card>
         </div>
-        <div style="position: fixed;
+        <div style="position: static;
         width: 33%;
         display: flex;
-        justify-content: center;">
+        justify-content: center;
+        z-index: 100;">
             <img class="carImage" style="left: 0;" [ngStyle]="totalRank[0] && totalRank[1] ?{'bottom': totalRank[0]-totalRank[1]*5+'px'}:{}" src="assets/abstractCar.png" alt="">
             <img class="carImage" style="right: 0;" [ngStyle]="totalRank[0] && totalRank[1] ?{'bottom': totalRank[1]-totalRank[0]*5+'px'}:{}" src="assets/abstractCar.png" alt="">
         </div>
-        <div style="width: 33%;">
+        <div style="width: 33%;position: absolute;">
             <div style="display: flex;
             flex-direction: column;
             align-items: center;margin-top: 30px;">
@@ -54,4 +55,7 @@
         ב {{winningParameters}} פרמטרים
     </div>
     <hr>
+    <app-comparing-graph [bigIsGood]="true" [cars]="cars" [paramName]="'קמ'" [bottomText]="'טווח סוללה'" [values]="[cars[0].batteryRange!,cars[1].batteryRange!]"></app-comparing-graph>
+    <hr>
+    <app-comparing-graph [bigIsGood]="false" [cars]="cars" [paramName]="'דקות'" [bottomText]="'מהירות טעינה'" [values]="[cars[0].chargingSpeed!,cars[1].chargingSpeed!]"></app-comparing-graph>
 </div>

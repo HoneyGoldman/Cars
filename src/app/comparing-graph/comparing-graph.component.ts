@@ -1,27 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
 import { Car } from 'src/Model/Car';
-import { DataServiceComponent } from '../data-service/data-service.component';
 
 @Component({
-  selector: 'app-results-page',
-  templateUrl: './results-page.component.html',
-  styleUrls: ['./results-page.component.css']
+  selector: 'app-comparing-graph',
+  templateUrl: './comparing-graph.component.html',
+  styleUrls: ['./comparing-graph.component.css']
 })
-export class ResultsPageComponent implements OnInit {
+export class ComparingGraphComponent implements OnInit{
+  @Input()
   cars:Car[]=[];
-  winnerIndex:number=1
-  looserIndex:number=0
-  winningParameters:number = 7
-  focus='general';
-  totalRank=[7.5,5.2]
-  constructor(private data:DataServiceComponent){}
+  @Input()
+  paramName:string=''
+  @Input()
+  bottomText:string=''
+  @Input()
+  values:number[]=[];
+  @Input()
+  bigIsGood:boolean=true
+
   tesla: Car = new Car()
   ev6: Car = new Car()
   ngOnInit(): void {
-    this.cars=this.data.comparingArray
-    this.calculateWinner();
-    // console.log(this.cars)
     // this.tesla.logo = 'assets/Branding/tesla.png'
     // this.tesla.model = 'Model 3'
     // this.tesla.subModel ='Dual Motor'
@@ -31,6 +30,8 @@ export class ResultsPageComponent implements OnInit {
     // this.tesla.orderLink = 'https://www.tesla.com/model3'
     // this.tesla.price = 320000
     // this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png'
+    // this.tesla.chargingSpeed = 50
+    // this.ev6.chargingSpeed = 30
     // this.ev6.logo = 'assets/Branding/kia.png'
     // this.ev6.model = 'EV6'
     // this.ev6.subModel ='Sport Edition'
@@ -41,18 +42,6 @@ export class ResultsPageComponent implements OnInit {
     // this.ev6.ImagePath = 'assets/cars/kia ev6 23.png'
     // this.cars[0] = this.tesla
     // this.cars[1] = this.ev6
+    // console.log(JSON.stringify(this.cars)+JSON.stringify(this.paramName)+JSON.stringify(this.values))
   }
-
-  calculateWinner(){
-
-  }
-
-  getFocus(){
-    return this.focus;
-  }
-
-  setFocus(focus:string){
-    this.focus = focus;
-  }
-
 }

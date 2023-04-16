@@ -32,8 +32,13 @@
 hr{
     height: 9px;
     display: block;
-    background-color: #f0f0f0;
+    background-color: #d7d7d7;;
     border: none;
-    margin-top: 30px;
+    margin: 30px;
     border-radius: 6px;
+}
+
+
+.app-comparing-graph{
+    margin: 30px 30px;
 }

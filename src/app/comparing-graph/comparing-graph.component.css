@@ -1,0 +1,17 @@
+.innerText {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.carImage {
+    margin: unset;
+    height: 100px;
+}
+
+.greenFocus {
+    width: 30%;
+    height: 4px;
+    box-shadow: 0 4px 0 0 #8bead4;
+    border-radius: 5px;
+}

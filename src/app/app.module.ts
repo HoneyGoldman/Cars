@@ -21,6 +21,7 @@ import { ComparingCarCardComponent } from './comparing-car-card/comparing-car-ca
 import { ResultsPageComponent } from './results-page/results-page.component';
 import { ResultsCarCardComponent } from './results-car-card/results-car-card.component';
 import { ResultCardComponent } from './result-card/result-card.component';
+import { ComparingGraphComponent } from './comparing-graph/comparing-graph.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ResultCardComponent } from './result-card/result-card.component';
     ComparingCarCardComponent,
     ResultsPageComponent,
     ResultsCarCardComponent,
-    ResultCardComponent
+    ResultCardComponent,
+    ComparingGraphComponent
   ],
   imports: [
     BrowserModule,

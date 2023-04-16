@@ -1,0 +1,77 @@
+<div class="flexContainer" style="flex-direction: row;">
+    <div style="width: 33%;">
+        <div class="innerText" style="margin-top: 100px;" *ngIf="(bigIsGood && (values[1]>values[0])) || ((!bigIsGood) && values[1]<values[0])">
+            <div>
+                {{cars[0].company}} {{cars[0].model}}
+            </div>
+            <div style="font-size: larger;padding: 10px;">
+                {{values[0]}} {{paramName}}
+            </div>
+        </div>
+        <div class="innerText" style="margin-top: 100px;" *ngIf="!((bigIsGood && (values[1]>values[0])) || ((!bigIsGood) && values[1]<values[0]))">
+            <div style="
+            margin: auto;
+            height: max-content;">
+                <div class="innerText">
+                    {{cars[0].company}} {{cars[0].model}}
+                </div>
+                <div *ngIf="(bigIsGood && values[0]>values[1]) || (!bigIsGood && values[0]<values[1])" style="display: flex;justify-content: center;">
+                    <div class="greenFocus"></div>
+                </div>
+            </div>
+            <div style="font-size: larger;padding: 10px;">
+                {{values[0]}} {{paramName}}
+            </div>
+        </div>
+    </div>
+    <div style="position: static;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        z-index: 100;">
+        <img class="carImage" style="left: 0;"
+            [ngStyle]="values[0] && values[1] ?{'bottom': (bigIsGood?'':'-')+(values[0]/(values[0]+values[1]))*50+'px'}:{}" src="assets/abstractCar.png"
+            alt="">
+        <img class="carImage" style="right: 0;"
+            [ngStyle]="values[0] && values[1] ?{'bottom': (bigIsGood?'':'-')+(values[1]/(values[0]+values[1]))*50+'px'}:{}" src="assets/abstractCar.png"
+            alt="">
+    </div>
+    <div style="width: 33%;position: absolute;">
+        <div style="display: flex;
+            flex-direction: column;
+            align-items: center;margin-top: 30px;">
+            <img style="width: 62%;" src="assets/finishLine.png" alt="">
+            <img style="width: 62%;height: 11vh;" src="assets/finishLineShadow.png" alt="">
+        </div>
+        <div class="innerText">{{bottomText}}</div>
+    </div>
+
+
+
+    <div style="width: 33%;">
+        <div class="innerText" style="margin-top: 100px;" *ngIf="!((bigIsGood && (values[1]>values[0])) || ((!bigIsGood) && values[1]<values[0]))">
+            <div>
+                {{cars[1].company}} {{cars[1].model}}
+            </div>
+            <div style="font-size: larger;padding: 10px;">
+                {{values[1]}} {{paramName}}
+            </div>
+        </div>
+        <div class="innerText" style="margin-top: 100px;" *ngIf="(bigIsGood && (values[1]>values[0])) || ((!bigIsGood) && values[1]<values[0])">
+            <div style="
+            margin: auto;
+            height: max-content;">
+                <div class="innerText">
+                    {{cars[1].company}} {{cars[1].model}}
+                </div>
+                <div *ngIf="(bigIsGood && (values[1]>values[0])) || ((!bigIsGood) && values[1]<values[0])" style="display: flex;justify-content: center;">
+                    <div class="greenFocus"></div>
+                </div>
+            </div>
+            <div style="font-size: larger;padding: 10px;">
+                {{values[1]}} {{paramName}}
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -32,12 +32,15 @@ export class SearchComponent implements OnInit {
     this.tesla.orderLink = 'https://www.tesla.com/model3'
     this.tesla.price = 320000
     this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png'
+    this.tesla.chargingSpeed = 50
+    this.ev6.chargingSpeed = 30
     this.ev6.logo = 'assets/Branding/kia.png'
     this.ev6.model = 'EV6'
     this.ev6.subModel ='Sport Edition'
     this.ev6.year = 2023
     this.ev6.company = 'KIA'
     this.tesla.Rank = '4.5'
+    this.ev6.batteryRange = 400
     this.ev6.ImagePath = 'assets/cars/kia ev6 23.png'
     this.company2Cars.set('KIA', [this.ev6, this.ev6, this.ev6, this.ev6])
     this.company2Cars.set('Tesla', [this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla, this.tesla])
