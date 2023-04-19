@@ -1,9 +1,9 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Car } from 'src/Model/Car';
-import { CarInfoComponent } from '../car-info/car-info.component';
 import { DataServiceComponent } from '../data-service/data-service.component';
 import { Router } from '@angular/router';
+import { CarInfoV2Component } from '../car-info-v2/car-info-v2.component';
 
 @Component({
   selector: 'app-search',
@@ -33,13 +33,21 @@ export class SearchComponent implements OnInit {
     this.tesla.price = 320000
     this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png'
     this.tesla.chargingSpeed = 50
+    this.tesla.seatsNumber = 5
+    this.tesla.zeroToHundred = 3.3
+    this.tesla.Rank = '4.5'
+    this.tesla.safetyRank = 8
     this.ev6.chargingSpeed = 30
+    this.ev6.safetyRank = 7
+    this.ev6.price = 327500
+    this.ev6.orderLink = 'https://kia-israel.co.il/רכב/ev6'
     this.ev6.logo = 'assets/Branding/kia.png'
     this.ev6.model = 'EV6'
     this.ev6.subModel ='Sport Edition'
     this.ev6.year = 2023
     this.ev6.company = 'KIA'
-    this.tesla.Rank = '4.5'
+    this.ev6.seatsNumber = 5
+    this.ev6.zeroToHundred = 4.2
     this.ev6.batteryRange = 400
     this.ev6.ImagePath = 'assets/cars/kia ev6 23.png'
     this.company2Cars.set('KIA', [this.ev6, this.ev6, this.ev6, this.ev6])
@@ -71,12 +79,12 @@ export class SearchComponent implements OnInit {
 
 
   openCarInfoDialog(car: Car) {
-    this.dialog.open(CarInfoComponent, {
+    this.dialog.open(CarInfoV2Component, {
       disableClose: false,
       data: {
         injectedCar: car
       }
-    }).updateSize('80%', '80%')
+    }).updateSize('100vw', '100%')
   }
 
 

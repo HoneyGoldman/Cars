@@ -1,0 +1,129 @@
+<div style="overflow-y: scroll;">
+    <div dir="rtl">
+        <div style="margin: 8px;">
+            <button mat-button mat-dialog-close class="close-button" style="min-width: 23px;">X</button>
+        </div>
+        <h2 mat-dialog-title style="display: flex;">
+            <!-- <img class="star" style="height: 30px;" *ngIf="car.logo"
+            src={{car.logo}}> -->
+            <div style="width: 33%;">
+                <b>{{car.company}}&nbsp;{{car.model}}&nbsp;{{car.subModel}}&nbsp;{{car.year}}</b>
+            </div>
+            <div style="width: 66%;">
+                <div class="background" style="width: 33%;
+                height: 100%;
+                position: absolute;">
+                </div>
+                <div style="float: left;">
+                    <img class="carImage" style="width: auto !important;" src={{car.ImagePath}} alt="{{car.Rank}}">
+                </div>
+            </div>
+
+
+        </h2>
+
+        <div class="flexContainer" style="flex-direction: row;margin-top: 30px;">
+            <div style="width:50%;height: 50px;">
+                <div class="priceText">₪ {{car.price}}</div>
+                <div class="bottomText">מחירון משוער*</div>
+            </div>
+            <div style="width:25%;height: 50px;" (click)="chooseCar()" mat-dialog-close>
+                <div style="display: flex;justify-content: center;">
+                    <img src="assets/compareButton.png" style="width: 66px;margin: auto;" alt="">
+                </div>
+                <div class="bottomText">הוסף להשוואה</div>
+            </div>
+            <div style="width:25%;height: 50px;justify-content: center;">
+                <div style="display: flex;">
+                    <img class="buyLogo" src="assets/buylogo.png" alt="">
+                </div>
+                <div class="bottomText" (click)="gotoVendor()">ליבואן</div>
+            </div>
+        </div>
+
+
+        <div class="buttonsContainer flexContainer" style="flex-direction: row;justify-content: space-around;margin-bottom: 30px;">
+            <div (click)="setFocus('general')" [ngClass]="getFocus()==='general'?'focus':''">
+                כללי
+            </div>
+            <div (click)="setFocus('tech')" [ngClass]="getFocus()==='tech'?'focus':''">
+                טכנולוגיות
+            </div>
+            <div (click)="setFocus('votes')" [ngClass]="getFocus()==='votes'?'focus':''">
+                ביקורות
+            </div>
+        </div>
+
+        <div *ngIf="focus==='general'" class="flexContainer" style="flex-direction: row;">
+            <div style="width: 33%;height: 280px;">
+                <div class="seatsNumber">
+                    <div>
+                        {{car.seatsNumber}}
+                    </div>
+                </div>
+                <div style="text-align: center;
+            font-family: sans-serif;margin-top: 5px;font-size: small;">
+                    מושבים
+                </div>
+                <div class="bottomText parameters">
+                    <app-parameter-card [parameterName]="'זמן טעינה'" parameterUnits="דק'"
+                        [imagePath]="'assets/charging.png'" [value]=car.chargingSpeed></app-parameter-card>
+                </div>
+            </div>
+            <div class="bottomText" style="width: 33%;font-size: larger;margin-top: 6px;height: 280px;">
+                <div style="font-weight: bold;text-decoration: underline;">כללי</div>
+                <div style="font-weight: bold;">משפחתי</div>
+                <div style="font-size: small;margin-top: 10px;">קטגוריה</div>
+                <div class="bottomText parameters">
+                    <app-parameter-card [parameterName]="'טווח נסיעה מקסימלי'" parameterUnits='ק"מ'
+                        [imagePath]="'assets/road.png'" [value]=car.batteryRange></app-parameter-card>
+                </div>
+            </div>
+            <div style="width: 33%;height: 280px;">
+                <div class="seatsNumber" style="background: #3a5fb7;">
+                    <div>
+                        {{car.safetyRank}}
+                    </div>
+                </div>
+                <div style="text-align: center;
+            font-family: sans-serif;margin-top: 5px;font-size: small;">
+                    בטיחות
+                </div>
+                <div class="bottomText parameters">
+                    <app-parameter-card [parameterName]="'0-100 קמש'" parameterUnits="'שניות'"
+                        [imagePath]="'assets/acceleration.png'" [value]=car.zeroToHundred></app-parameter-card>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="flexContainer" style="width: 70%;" dir="ltr">
+
+            <div>
+                <mat-dialog-content dir="rtl">
+                    <p>שנה: <b> {{car.year}}</b></p>
+                    <p *ngIf="car.Rank">דירוג:<img class="star" src='assets/star.png'
+                            alt="{{car.Rank}}"><b>{{car.Rank}}</b>
+                    </p>
+                    <p>שנה:<b>{{car.year}}</b></p>
+                    <p>טווח סוללה:<b>{{car.batteryRange}}</b> ק"מ</p>
+                    <p>מחיר:<b>{{car.price}}</b></p>
+                    <p>לאתר החברה:<b>{{car.orderLink}}</b></p>
+                </mat-dialog-content>
+            </div>
+        </div>
+    </div>
+    <mat-dialog-actions class="flexContainer downCompareBar">
+        <button class="infoComparButton" (click)="chooseCar()" mat-dialog-close>הוסף להשוואה</button>
+    </mat-dialog-actions> -->
+
+    </div>

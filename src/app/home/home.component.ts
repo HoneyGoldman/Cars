@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Car } from 'src/Model/Car';
 import { DataServiceComponent } from '../data-service/data-service.component';
 import { ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { CarInfoV2Component } from '../car-info-v2/car-info-v2.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +14,7 @@ export class HomeComponent implements OnInit {
   cars:Car[]=[]
   searchText:string = ''
   carsView:boolean = false
-  constructor(private data:DataServiceComponent,private route: ActivatedRoute) { }
+  constructor(private data:DataServiceComponent,private route: ActivatedRoute,private dialog:MatDialog) { }
 
   ngOnInit(): void {
     let car:Car= new Car();
@@ -31,6 +33,7 @@ export class HomeComponent implements OnInit {
         this.changeCarsView()
       }
     })
+    // this.dialog.open(CarInfoV2Component)
   }
 
   changeCarsView(){

@@ -2,6 +2,7 @@ export class Car {
     company?: string
     model?: string
     subModel?:string
+    category?:string
     price?: number
     batteryRange?: number
     chargingSpeed?:number

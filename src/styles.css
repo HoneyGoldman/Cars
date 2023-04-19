@@ -2,6 +2,11 @@
 @import "~@angular/cdk/overlay-prebuilt.css";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
+
+.cdk-overlay-pane {
+    max-width: none !important;
+}
+
 .flexContainer {
     display: flex;
     justify-content: center;

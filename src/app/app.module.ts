@@ -22,6 +22,8 @@ import { ResultsPageComponent } from './results-page/results-page.component';
 import { ResultsCarCardComponent } from './results-car-card/results-car-card.component';
 import { ResultCardComponent } from './result-card/result-card.component';
 import { ComparingGraphComponent } from './comparing-graph/comparing-graph.component';
+import { CarInfoV2Component } from './car-info-v2/car-info-v2.component';
+import { ParameterCardComponent } from './parameter-card/parameter-card.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ComparingGraphComponent } from './comparing-graph/comparing-graph.compo
     ResultsPageComponent,
     ResultsCarCardComponent,
     ResultCardComponent,
-    ComparingGraphComponent
+    ComparingGraphComponent,
+    CarInfoV2Component,
+    ParameterCardComponent
   ],
   imports: [
     BrowserModule,
