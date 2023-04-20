@@ -244,7 +244,7 @@ app-results-car-card[dir="rtl"] .data{
 }
 
 .carImage{
-    width: 50%;
+    /* width: 50%; */
     height: auto;
     position: relative;
     margin: auto;

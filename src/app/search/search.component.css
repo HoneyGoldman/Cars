@@ -42,3 +42,12 @@
     position: relative;
     z-index: 9;
 }
+
+.filter > div {
+    width: 70px;
+    display: flex;
+}
+.filter > div > img {
+    margin: auto;
+    width: 55px;
+}
