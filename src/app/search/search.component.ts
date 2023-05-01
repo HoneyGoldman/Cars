@@ -69,6 +69,7 @@ export class SearchComponent implements OnInit {
 
   closePopUp() {
     this.close.emit('close')
+    this.router.navigateByUrl('/')
   }
 
   changeFiltersView() {

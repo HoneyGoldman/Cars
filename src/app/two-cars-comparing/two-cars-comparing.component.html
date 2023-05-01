@@ -2,7 +2,7 @@
 margin-top: 16px;
 justify-content: space-evenly;
 ">
-    <app-car-home-card dir="ltr" style="width: 44%;" [car]="ionic"></app-car-home-card>
+    <app-car-home-card dir="ltr" style="width: 44%;" [car]="ev6"></app-car-home-card>
     <div class="spacer"></div>
     <app-car-home-card dir="rtl" style="width: 44%;" [car]="tesla"></app-car-home-card>
 </div>
@@ -15,8 +15,8 @@ margin-top: 10px;">
 </div>
 
 <div dir="rtl" class="flexContainer" style="margin-top: 10px;">
-    <button class="button" style="font-size: 16px;">
-        <h3>קדימה להשוות!</h3>
+    <button class="button" style="font-size: 16px;color: black;" (click)="openComparison()">
+        <h3>השוואה חדשה!</h3>
     </button>
 </div>
 

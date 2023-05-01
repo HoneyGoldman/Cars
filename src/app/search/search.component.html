@@ -13,7 +13,7 @@
                 </div>
         </div>
         <div [ngClass]="comparingCarArr.length===0?'hidden':'visible'" class="flexContainer" style="flex-direction: row;">
-            <div class="textDiv" [ngClass]="comparingCarArr.length>1 && comparingCarArr.length<2?'hidden':'visible'">נותר עוד רכב אחד לבחירה</div>
+            <div class="textDiv" [ngClass]="comparingCarArr.length==1?'visible':'hidden'">נותר עוד רכב אחד לבחירה</div>
             <div class="compareContainer">
                 <mat-icon class="icon" *ngIf="comparingCarArr[0]" (click)="removeCar(0)">remove_circle</mat-icon>
                 <app-comparing-car-card [car]="comparingCarArr[0]"></app-comparing-car-card>
