@@ -143,9 +143,15 @@ app-results-car-card[dir="ltr"] .background{
 }
 app-results-car-card[dir="ltr"] .data{
     left: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 10px;
 }
 app-results-car-card[dir="rtl"] .data{
     right: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 10px;
 }
 .thinText {
     font-size: small;

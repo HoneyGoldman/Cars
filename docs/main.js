@@ -448,7 +448,7 @@ CarInfoV2Component.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3
   selectors: [["app-car-info-v2"]],
   decls: 37,
   vars: 11,
-  consts: [[2, "overflow-y", "scroll"], ["dir", "rtl"], [2, "margin", "8px"], ["mat-button", "", "mat-dialog-close", "", 1, "close-button", 2, "min-width", "23px"], ["mat-dialog-title", "", 2, "display", "flex"], [2, "width", "33%"], [2, "width", "66%"], [1, "background", 2, "width", "33%", "height", "100%", "position", "absolute"], [2, "float", "left"], [1, "carImage", 2, "width", "auto !important", 3, "src", "alt"], [1, "flexContainer", 2, "flex-direction", "row", "margin-top", "30px"], [2, "width", "50%", "height", "50px"], [1, "priceText"], [1, "bottomText"], ["mat-dialog-close", "", 2, "width", "25%", "height", "50px", 3, "click"], [2, "display", "flex", "justify-content", "center"], ["src", "assets/compareButton.png", "alt", "", 2, "width", "66px", "margin", "auto"], [2, "width", "25%", "height", "50px", "justify-content", "center"], [2, "display", "flex"], ["src", "assets/buylogo.png", "alt", "", 1, "buyLogo"], [1, "bottomText", 3, "click"], [1, "buttonsContainer", "flexContainer", 2, "flex-direction", "row", "justify-content", "space-around", "margin-bottom", "30px"], [3, "ngClass", "click"], ["class", "flexContainer", "style", "flex-direction: row;", 4, "ngIf"], [1, "flexContainer", 2, "flex-direction", "row"], [2, "width", "33%", "height", "280px"], [1, "seatsNumber"], [2, "text-align", "center", "font-family", "sans-serif", "margin-top", "5px", "font-size", "small"], [1, "bottomText", "parameters"], ["parameterUnits", "\u05D3\u05E7'", 3, "parameterName", "imagePath", "value"], [1, "bottomText", 2, "width", "33%", "font-size", "larger", "margin-top", "6px", "height", "280px"], [2, "font-weight", "bold", "text-decoration", "underline"], [2, "font-weight", "bold"], [2, "font-size", "small", "margin-top", "10px"], ["parameterUnits", "\u05E7\"\u05DE", 3, "parameterName", "imagePath", "value"], [1, "seatsNumber", 2, "background", "#3a5fb7"], ["parameterUnits", "'\u05E9\u05E0\u05D9\u05D5\u05EA'", 3, "parameterName", "imagePath", "value"]],
+  consts: [[2, "overflow-y", "scroll", "height", "100%"], ["dir", "rtl"], [2, "margin", "8px"], ["mat-button", "", "mat-dialog-close", "", 1, "close-button", 2, "min-width", "23px"], ["mat-dialog-title", "", 2, "display", "flex"], [2, "width", "33%"], [2, "width", "66%"], [1, "background", 2, "width", "33%", "height", "100%", "position", "absolute"], [2, "float", "left"], [1, "carImage", 2, "width", "auto !important", 3, "src", "alt"], [1, "flexContainer", 2, "flex-direction", "row", "margin-top", "30px"], [2, "width", "50%", "height", "50px"], [1, "priceText"], [1, "bottomText"], ["mat-dialog-close", "", 2, "width", "25%", "height", "50px", 3, "click"], [2, "display", "flex", "justify-content", "center"], ["src", "assets/compareButton.png", "alt", "", 2, "width", "66px", "margin", "auto"], [2, "width", "25%", "height", "50px", "justify-content", "center"], [2, "display", "flex"], ["src", "assets/buylogo.png", "alt", "", 1, "buyLogo"], [1, "bottomText", 3, "click"], [1, "buttonsContainer", "flexContainer", 2, "flex-direction", "row", "justify-content", "space-around", "margin-bottom", "30px"], [3, "ngClass", "click"], ["class", "flexContainer", "style", "flex-direction: row;", 4, "ngIf"], [1, "flexContainer", 2, "flex-direction", "row"], [2, "width", "33%", "height", "280px"], [1, "seatsNumber"], [2, "text-align", "center", "font-family", "sans-serif", "margin-top", "5px", "font-size", "small"], [1, "bottomText", "parameters"], ["parameterUnits", "\u05D3\u05E7'", 3, "parameterName", "imagePath", "value"], [1, "bottomText", 2, "width", "33%", "font-size", "larger", "margin-top", "6px", "height", "280px"], [2, "font-weight", "bold", "text-decoration", "underline"], [2, "font-weight", "bold"], [2, "font-size", "small", "margin-top", "10px"], ["parameterUnits", "\u05E7\"\u05DE", 3, "parameterName", "imagePath", "value"], [1, "seatsNumber", 2, "background", "#3a5fb7"], ["parameterUnits", "'\u05E9\u05E0\u05D9\u05D5\u05EA'", 3, "parameterName", "imagePath", "value"]],
   template: function CarInfoV2Component_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "button", 3);
@@ -527,7 +527,7 @@ CarInfoV2Component.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__.MatDialogClose, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__.MatDialogTitle, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_6__.Dir, _angular_material_button__WEBPACK_IMPORTED_MODULE_7__.MatButton, _parameter_card_parameter_card_component__WEBPACK_IMPORTED_MODULE_2__.ParameterCardComponent],
-  styles: [".background[_ngcontent-%COMP%]{\r\n    left: 0;\r\n    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);\r\n    background-image: linear-gradient(-45deg, #f0f0f0 33%, #8bead4);\r\n    border-radius: 0 40px 10px 0;\r\n}\r\n.priceText[_ngcontent-%COMP%]{\r\n    background-color: black;\r\n    border-radius: 27px;\r\n    padding: 7px;\r\n    margin: 14px 16px 2px;\r\n    color: white;\r\n    text-align: center;\r\n    font-family: sans-serif;\r\n    font-size: larger;\r\n}\r\n\r\n.bottomText[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n    font-family: sans-serif;\r\n    font-size: small;\r\n    margin-top: 5px;\r\n}\r\n\r\n\r\n.buttonsContainer[_ngcontent-%COMP%] {\r\n    background-color: #f0f0f0a5;\r\n    border: 1px solid rgb(164 164 164 / 27%);\r\n    border-radius: 24px;\r\n    padding: 11px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: larger;\r\n    margin-top: 66px;\r\n    width: 90%;\r\n}\r\n\r\n.focus[_ngcontent-%COMP%] {\r\n    background: transparent;\r\n    border-radius: 10px;\r\n    height: 4px;\r\n    padding: 0px 20px 0px 20px;\r\n    box-shadow: 0 25px 0 0 #000;\r\n    text-align: center;\r\n}\r\n\r\n.innerText[_ngcontent-%COMP%] {\r\n    text-align: center;\r\n    margin-top: 40px;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n}\r\n\r\n.carImage[_ngcontent-%COMP%] {\r\n    margin: unset;\r\n    height: 100px;\r\n}\r\n\r\n\r\nhr[_ngcontent-%COMP%]{\r\n    height: 9px;\r\n    display: block;\r\n    background-color: #d7d7d7;;\r\n    border: none;\r\n    margin: 30px;\r\n    border-radius: 6px;\r\n}\r\n\r\n\r\n.app-comparing-graph[_ngcontent-%COMP%]{\r\n    margin: 30px 30px;\r\n}\r\n\r\n\r\n.seatsNumber[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n    color: black;\r\n    background: #8bead4;\r\n    width: 25px;\r\n    margin: auto;\r\n    border-radius: 9px;\r\n    margin-top: 16px;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n    padding: 11px;\r\n}\r\n\r\n.buyLogo[_ngcontent-%COMP%]{\r\n    background-color: black;\r\n    height: 32px;\r\n    padding: 12px;\r\n    border-radius: 16px;\r\n    margin: auto;\r\n}\r\n\r\n.parameters[_ngcontent-%COMP%]{\r\n    margin-top: 40px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY2FyLWluZm8tdjIvY2FyLWluZm8tdjIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLE9BQU87SUFDUCxtREFBbUQ7SUFDbkQsK0RBQStEO0lBQy9ELDRCQUE0QjtBQUNoQztBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1oscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsdUJBQXVCO0lBQ3ZCLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCLGVBQWU7QUFDbkI7OztBQUdBO0lBQ0ksMkJBQTJCO0lBQzNCLHdDQUF3QztJQUN4QyxtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLHlDQUF5QztJQUN6QyxpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0Isa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGFBQWE7QUFDakI7OztBQUdBO0lBQ0ksV0FBVztJQUNYLGNBQWM7SUFDZCx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7OztBQUdBO0lBQ0ksaUJBQWlCO0FBQ3JCOzs7QUFHQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsdUJBQXVCO0lBQ3ZCLGFBQWE7QUFDakI7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGdCQUFnQjtBQUNwQiIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZ3JvdW5ke1xyXG4gICAgbGVmdDogMDtcclxuICAgIGNsaXAtcGF0aDogcG9seWdvbigwIDAsIDgwJSAwJSwgMTAwJSAxMDAlLCAwJSAxMDAlKTtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCgtNDVkZWcsICNmMGYwZjAgMzMlLCAjOGJlYWQ0KTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDAgNDBweCAxMHB4IDA7XHJcbn1cclxuLnByaWNlVGV4dHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMjdweDtcclxuICAgIHBhZGRpbmc6IDdweDtcclxuICAgIG1hcmdpbjogMTRweCAxNnB4IDJweDtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC1zaXplOiBsYXJnZXI7XHJcbn1cclxuXHJcbi5ib3R0b21UZXh0e1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXNpemU6IHNtYWxsO1xyXG4gICAgbWFyZ2luLXRvcDogNXB4O1xyXG59XHJcblxyXG5cclxuLmJ1dHRvbnNDb250YWluZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2YwZjBmMGE1O1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgcmdiKDE2NCAxNjQgMTY0IC8gMjclKTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDI0cHg7XHJcbiAgICBwYWRkaW5nOiAxMXB4O1xyXG4gICAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXNpemU6IGxhcmdlcjtcclxuICAgIG1hcmdpbi10b3A6IDY2cHg7XHJcbiAgICB3aWR0aDogOTAlO1xyXG59XHJcblxyXG4uZm9jdXMge1xyXG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgaGVpZ2h0OiA0cHg7XHJcbiAgICBwYWRkaW5nOiAwcHggMjBweCAwcHggMjBweDtcclxuICAgIGJveC1zaGFkb3c6IDAgMjVweCAwIDAgIzAwMDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmlubmVyVGV4dCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXJnaW4tdG9wOiA0MHB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LWZhbWlseTogc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLmNhckltYWdlIHtcclxuICAgIG1hcmdpbjogdW5zZXQ7XHJcbiAgICBoZWlnaHQ6IDEwMHB4O1xyXG59XHJcblxyXG5cclxuaHJ7XHJcbiAgICBoZWlnaHQ6IDlweDtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Q3ZDdkNzs7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBtYXJnaW46IDMwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XHJcbn1cclxuXHJcblxyXG4uYXBwLWNvbXBhcmluZy1ncmFwaHtcclxuICAgIG1hcmdpbjogMzBweCAzMHB4O1xyXG59XHJcblxyXG5cclxuLnNlYXRzTnVtYmVye1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgYmFja2dyb3VuZDogIzhiZWFkNDtcclxuICAgIHdpZHRoOiAyNXB4O1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgYm9yZGVyLXJhZGl1czogOXB4O1xyXG4gICAgbWFyZ2luLXRvcDogMTZweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbiAgICBwYWRkaW5nOiAxMXB4O1xyXG59XHJcblxyXG4uYnV5TG9nb3tcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgaGVpZ2h0OiAzMnB4O1xyXG4gICAgcGFkZGluZzogMTJweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbn1cclxuXHJcbi5wYXJhbWV0ZXJze1xyXG4gICAgbWFyZ2luLXRvcDogNDBweDtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+  styles: [".background[_ngcontent-%COMP%]{\r\n    left: 0;\r\n    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);\r\n    background-image: linear-gradient(-45deg, #f0f0f0 33%, #8bead4);\r\n    border-radius: 0 40px 10px 0;\r\n}\r\n.priceText[_ngcontent-%COMP%]{\r\n    background-color: black;\r\n    border-radius: 27px;\r\n    padding: 7px;\r\n    margin: 14px 16px 2px;\r\n    color: white;\r\n    text-align: center;\r\n    font-family: sans-serif;\r\n    font-size: larger;\r\n}\r\n\r\n.bottomText[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n    font-family: sans-serif;\r\n    font-size: small;\r\n    margin-top: 5px;\r\n}\r\n\r\n\r\n.buttonsContainer[_ngcontent-%COMP%] {\r\n    background-color: #f0f0f0a5;\r\n    border: 1px solid rgb(164 164 164 / 27%);\r\n    border-radius: 24px;\r\n    padding: 11px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: larger;\r\n    margin-top: 66px;\r\n    width: 90%;\r\n}\r\n\r\n.focus[_ngcontent-%COMP%] {\r\n    background: transparent;\r\n    border-radius: 10px;\r\n    height: 4px;\r\n    padding: 0px 20px 0px 20px;\r\n    box-shadow: 0 25px 0 0 #000;\r\n    text-align: center;\r\n}\r\n\r\n.innerText[_ngcontent-%COMP%] {\r\n    text-align: center;\r\n    margin-top: 40px;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n}\r\n\r\n.carImage[_ngcontent-%COMP%] {\r\n    margin: unset;\r\n}\r\n\r\nhr[_ngcontent-%COMP%]{\r\n    height: 9px;\r\n    display: block;\r\n    background-color: #d7d7d7;;\r\n    border: none;\r\n    margin: 30px;\r\n    border-radius: 6px;\r\n}\r\n\r\n\r\n.app-comparing-graph[_ngcontent-%COMP%]{\r\n    margin: 30px 30px;\r\n}\r\n\r\n\r\n.seatsNumber[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n    color: black;\r\n    background: #8bead4;\r\n    width: 25px;\r\n    margin: auto;\r\n    border-radius: 9px;\r\n    margin-top: 16px;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n    padding: 11px;\r\n}\r\n\r\n.buyLogo[_ngcontent-%COMP%]{\r\n    background-color: black;\r\n    height: 32px;\r\n    padding: 12px;\r\n    border-radius: 16px;\r\n    margin: auto;\r\n}\r\n\r\n.parameters[_ngcontent-%COMP%]{\r\n    margin-top: 40px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY2FyLWluZm8tdjIvY2FyLWluZm8tdjIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLE9BQU87SUFDUCxtREFBbUQ7SUFDbkQsK0RBQStEO0lBQy9ELDRCQUE0QjtBQUNoQztBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1oscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsdUJBQXVCO0lBQ3ZCLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCLGVBQWU7QUFDbkI7OztBQUdBO0lBQ0ksMkJBQTJCO0lBQzNCLHdDQUF3QztJQUN4QyxtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLHlDQUF5QztJQUN6QyxpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0Isa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxjQUFjO0lBQ2QseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osa0JBQWtCO0FBQ3RCOzs7QUFHQTtJQUNJLGlCQUFpQjtBQUNyQjs7O0FBR0E7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLHVCQUF1QjtJQUN2QixhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEIiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFja2dyb3VuZHtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICBjbGlwLXBhdGg6IHBvbHlnb24oMCAwLCA4MCUgMCUsIDEwMCUgMTAwJSwgMCUgMTAwJSk7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoLTQ1ZGVnLCAjZjBmMGYwIDMzJSwgIzhiZWFkNCk7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwIDQwcHggMTBweCAwO1xyXG59XHJcbi5wcmljZVRleHR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgIGJvcmRlci1yYWRpdXM6IDI3cHg7XHJcbiAgICBwYWRkaW5nOiA3cHg7XHJcbiAgICBtYXJnaW46IDE0cHggMTZweCAycHg7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LWZhbWlseTogc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtc2l6ZTogbGFyZ2VyO1xyXG59XHJcblxyXG4uYm90dG9tVGV4dHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC1zaXplOiBzbWFsbDtcclxuICAgIG1hcmdpbi10b3A6IDVweDtcclxufVxyXG5cclxuXHJcbi5idXR0b25zQ29udGFpbmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmMGYwZjBhNTtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIHJnYigxNjQgMTY0IDE2NCAvIDI3JSk7XHJcbiAgICBib3JkZXItcmFkaXVzOiAyNHB4O1xyXG4gICAgcGFkZGluZzogMTFweDtcclxuICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC1zaXplOiBsYXJnZXI7XHJcbiAgICBtYXJnaW4tdG9wOiA2NnB4O1xyXG4gICAgd2lkdGg6IDkwJTtcclxufVxyXG5cclxuLmZvY3VzIHtcclxuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgIGhlaWdodDogNHB4O1xyXG4gICAgcGFkZGluZzogMHB4IDIwcHggMHB4IDIwcHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDI1cHggMCAwICMwMDA7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5pbm5lclRleHQge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgbWFyZ2luLXRvcDogNDBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5jYXJJbWFnZSB7XHJcbiAgICBtYXJnaW46IHVuc2V0O1xyXG59XHJcblxyXG5ocntcclxuICAgIGhlaWdodDogOXB4O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZDdkN2Q3OztcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIG1hcmdpbjogMzBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcclxufVxyXG5cclxuXHJcbi5hcHAtY29tcGFyaW5nLWdyYXBoe1xyXG4gICAgbWFyZ2luOiAzMHB4IDMwcHg7XHJcbn1cclxuXHJcblxyXG4uc2VhdHNOdW1iZXJ7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kOiAjOGJlYWQ0O1xyXG4gICAgd2lkdGg6IDI1cHg7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICBib3JkZXItcmFkaXVzOiA5cHg7XHJcbiAgICBtYXJnaW4tdG9wOiAxNnB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LWZhbWlseTogc2Fucy1zZXJpZjtcclxuICAgIHBhZGRpbmc6IDExcHg7XHJcbn1cclxuXHJcbi5idXlMb2dve1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgICBoZWlnaHQ6IDMycHg7XHJcbiAgICBwYWRkaW5nOiAxMnB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTZweDtcclxuICAgIG1hcmdpbjogYXV0bztcclxufVxyXG5cclxuLnBhcmFtZXRlcnN7XHJcbiAgICBtYXJnaW4tdG9wOiA0MHB4O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
 /***/ }),
@@ -1073,15 +1073,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "HomeComponent": () => (/* binding */ HomeComponent)
 /* harmony export */ });
 /* harmony import */ var src_Model_Car__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/Model/Car */ 8062);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _data_service_data_service_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data-service/data-service.component */ 6124);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 124);
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 4666);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/bidi */ 2867);
-/* harmony import */ var _two_cars_comparing_two_cars_comparing_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../two-cars-comparing/two-cars-comparing.component */ 3861);
-/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../search/search.component */ 6392);
+/* harmony import */ var _results_page_results_page_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../results-page/results-page.component */ 2504);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _data_service_data_service_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data-service/data-service.component */ 6124);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/cdk/bidi */ 2867);
+/* harmony import */ var _two_cars_comparing_two_cars_comparing_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../two-cars-comparing/two-cars-comparing.component */ 3861);
+/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../search/search.component */ 6392);
+
 
 
 
@@ -1094,22 +1096,22 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomeComponent_input_2_Template(rf, ctx) {
   if (rf & 1) {
-    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "input", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngModelChange", function HomeComponent_input_2_Template_input_ngModelChange_0_listener($event) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r6);
-      const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r5.searchText = $event);
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "input", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("ngModelChange", function HomeComponent_input_2_Template_input_ngModelChange_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r6);
+      const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r5.searchText = $event);
     })("click", function HomeComponent_input_2_Template_input_click_0_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r6);
-      const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r7.changeCarsView());
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r6);
+      const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r7.changeCarsView());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngModel", ctx_r0.searchText);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngModel", ctx_r0.searchText);
   }
 }
 const _c0 = function () {
@@ -1125,71 +1127,77 @@ const _c1 = function () {
 };
 function HomeComponent_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 8)(1, "app-search", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("close", function HomeComponent_div_3_Template_app_search_close_1_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r9);
-      const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r8.changeCarsView());
+    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 8)(1, "app-search", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("close", function HomeComponent_div_3_Template_app_search_close_1_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r9);
+      const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r8.changeCarsView());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", !ctx_r1.carsView ? "hidden" : "visible")("ngStyle", ctx_r1.carsView ? _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction0"](2, _c0) : _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpureFunction0"](3, _c1));
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngClass", !ctx_r1.carsView ? "hidden" : "visible")("ngStyle", ctx_r1.carsView ? _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](2, _c0) : _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](3, _c1));
   }
 }
 function HomeComponent_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 10)(1, "div")(2, "a", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](3, " \u05E0\u05D5\u05E7\u05D0\u05D0\u05D5\u05D8 \u05D9\u05D5\u05DE\u05D9");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "div", 12)(5, "button", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "\u05DC\u05EA\u05D5\u05E6\u05D0\u05D5\u05EA");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 10)(1, "div")(2, "a", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](3, " \u05E0\u05D5\u05E7\u05D0\u05D0\u05D5\u05D8 \u05D9\u05D5\u05DE\u05D9");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "div", 12)(5, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function HomeComponent_div_4_Template_button_click_5_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r11);
+      const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r10.openResults());
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](6, "\u05DC\u05EA\u05D5\u05E6\u05D0\u05D5\u05EA");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
   }
 }
 function HomeComponent_div_5_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "app-two-cars-comparing");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "app-two-cars-comparing");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
   }
 }
 function HomeComponent_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 14)(1, "div", 15)(2, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "img", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "div", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](5, "\u05D4\u05EA\u05D0\u05D9\u05DE\u05D5 \u05DC\u05D9 \u05E8\u05DB\u05D1");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](6, "div", 15)(7, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](8, "img", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "div", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](10, "\u05E2\u05DC \u05D7\u05E9\u05DE\u05DC");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](11, "div", 15)(12, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](13, "img", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](14, "div", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](15, "\u05D4\u05D7\u05D3\u05E9\u05D9\u05DD");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](16, "div", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function HomeComponent_div_6_Template_div_click_16_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r11);
-      const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r10.changeCarsView());
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 14)(1, "div", 15)(2, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](3, "img", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](5, "\u05D4\u05EA\u05D0\u05D9\u05DE\u05D5 \u05DC\u05D9 \u05E8\u05DB\u05D1");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](6, "div", 15)(7, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](8, "img", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](9, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](10, "\u05E2\u05DC \u05D7\u05E9\u05DE\u05DC");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](11, "div", 15)(12, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](13, "img", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](14, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](15, "\u05D4\u05D7\u05D3\u05E9\u05D9\u05DD");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](16, "div", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function HomeComponent_div_6_Template_div_click_16_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r13);
+      const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](ctx_r12.changeCarsView());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](17, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](18, "img", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](19, "div", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](20, "\u05D7\u05D9\u05E4\u05D5\u05E9");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](17, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](18, "img", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](19, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](20, "\u05D7\u05D9\u05E4\u05D5\u05E9");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
   }
 }
 class HomeComponent {
@@ -1200,8 +1208,37 @@ class HomeComponent {
     this.cars = [];
     this.searchText = '';
     this.carsView = false;
+    this.tesla = new src_Model_Car__WEBPACK_IMPORTED_MODULE_0__.Car();
+    this.ev6 = new src_Model_Car__WEBPACK_IMPORTED_MODULE_0__.Car();
   }
   ngOnInit() {
+    this.tesla.logo = 'assets/Branding/tesla.png';
+    this.tesla.model = 'Model 3';
+    this.tesla.subModel = 'Dual Motor';
+    this.tesla.year = 2023;
+    this.tesla.company = 'Tesla';
+    this.tesla.batteryRange = 320;
+    this.tesla.orderLink = 'https://www.tesla.com/model3';
+    this.tesla.price = 320000;
+    this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png';
+    this.tesla.chargingSpeed = 50;
+    this.tesla.seatsNumber = 5;
+    this.tesla.zeroToHundred = 3.3;
+    this.tesla.Rank = '4.5';
+    this.tesla.safetyRank = 8;
+    this.ev6.chargingSpeed = 30;
+    this.ev6.safetyRank = 7;
+    this.ev6.price = 327500;
+    this.ev6.orderLink = 'https://kia-israel.co.il/רכב/ev6';
+    this.ev6.logo = 'assets/Branding/kia.png';
+    this.ev6.model = 'EV6';
+    this.ev6.subModel = 'Sport Edition';
+    this.ev6.year = 2023;
+    this.ev6.company = 'KIA';
+    this.ev6.seatsNumber = 5;
+    this.ev6.zeroToHundred = 4.2;
+    this.ev6.batteryRange = 400;
+    this.ev6.ImagePath = 'assets/cars/kia ev6 23.png';
     let car = new src_Model_Car__WEBPACK_IMPORTED_MODULE_0__.Car();
     car.batteryRange = 100;
     car.company = 'Tesla';
@@ -1225,42 +1262,46 @@ class HomeComponent {
     this.carsView = !this.carsView;
     console.log('cars view ' + this.carsView);
   }
+  openResults() {
+    this.data.comparingArray = [this.tesla, this.ev6];
+    this.dialog.open(_results_page_results_page_component__WEBPACK_IMPORTED_MODULE_1__.ResultsPageComponent).updateSize('100vh', '100vh');
+  }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) {
-  return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_data_service_data_service_component__WEBPACK_IMPORTED_MODULE_1__.DataServiceComponent), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialog));
+  return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_data_service_data_service_component__WEBPACK_IMPORTED_MODULE_2__.DataServiceComponent), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__.MatDialog));
 };
-HomeComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
+HomeComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({
   type: HomeComponent,
   selectors: [["app-home"]],
   decls: 7,
   vars: 6,
-  consts: [["dir", "rtl", 1, "flexContainer", "visible", 3, "ngClass"], ["src", "assets/logo.png", "alt", "", 1, "logo"], ["class", "logo input", "type", "text", "placeholder", "\u05D7\u05E4\u05E9/\u05D9 \u05E8\u05DB\u05D1", 3, "ngModel", "ngModelChange", "click", 4, "ngIf"], ["style", "background-image: linear-gradient(1deg,#f0f0f0 14%, #8bead4);\nmargin-top: -86px;", 4, "ngIf"], ["dir", "rtl", "class", "flexContainer", "style", "flex-direction: row;justify-content: space-evenly;", 4, "ngIf"], [4, "ngIf"], ["dir", "rtl", "class", "flexContainer", "style", "flex-direction: row;margin-top: 30px;", 4, "ngIf"], ["type", "text", "placeholder", "\u05D7\u05E4\u05E9/\u05D9 \u05E8\u05DB\u05D1", 1, "logo", "input", 3, "ngModel", "ngModelChange", "click"], [2, "background-image", "linear-gradient(1deg,#f0f0f0 14%, #8bead4)", "margin-top", "-86px"], [1, "searchPopUp", 3, "ngClass", "ngStyle", "close"], ["dir", "rtl", 1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-evenly"], [1, "boldText", 2, "padding-left", "74px"], [2, "padding-right", "50px"], [1, "boldText", "homeButton"], ["dir", "rtl", 1, "flexContainer", 2, "flex-direction", "row", "margin-top", "30px"], [2, "width", "25%", "flex-direction", "column"], [1, "flexContainer"], ["src", "assets/carIcon_line.png", "alt", "", 1, "icon"], [1, "innerText"], ["src", "assets/thunderbolt.png", "alt", "", 1, "icon"], ["src", "assets/new_cars.png", "alt", "", 1, "icon"], [2, "width", "25%", "flex-direction", "column", 3, "click"]],
+  consts: [["dir", "rtl", 1, "flexContainer", "visible", 3, "ngClass"], ["src", "assets/logo.png", "alt", "", 1, "logo"], ["class", "logo input", "type", "text", "placeholder", "\u05D7\u05E4\u05E9/\u05D9 \u05E8\u05DB\u05D1", 3, "ngModel", "ngModelChange", "click", 4, "ngIf"], ["style", "background-image: linear-gradient(1deg,#f0f0f0 14%, #8bead4);\nmargin-top: -86px;", 4, "ngIf"], ["dir", "rtl", "class", "flexContainer", "style", "flex-direction: row;justify-content: space-evenly;", 4, "ngIf"], [4, "ngIf"], ["dir", "rtl", "class", "flexContainer", "style", "flex-direction: row;margin-top: 30px;", 4, "ngIf"], ["type", "text", "placeholder", "\u05D7\u05E4\u05E9/\u05D9 \u05E8\u05DB\u05D1", 1, "logo", "input", 3, "ngModel", "ngModelChange", "click"], [2, "background-image", "linear-gradient(1deg,#f0f0f0 14%, #8bead4)", "margin-top", "-86px"], [1, "searchPopUp", 3, "ngClass", "ngStyle", "close"], ["dir", "rtl", 1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-evenly"], [1, "boldText", 2, "padding-left", "74px"], [2, "padding-right", "50px", "color", "black"], [1, "boldText", "homeButton", 3, "click"], ["dir", "rtl", 1, "flexContainer", 2, "flex-direction", "row", "margin-top", "30px"], [2, "width", "25%", "flex-direction", "column"], [1, "flexContainer"], ["src", "assets/carIcon_line.png", "alt", "", 1, "icon"], [1, "innerText"], ["src", "assets/thunderbolt.png", "alt", "", 1, "icon"], ["src", "assets/new_cars.png", "alt", "", 1, "icon"], [2, "width", "25%", "flex-direction", "column", 3, "click"]],
   template: function HomeComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "img", 1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](2, HomeComponent_input_2_Template, 1, 1, "input", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, HomeComponent_div_3_Template, 2, 4, "div", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, HomeComponent_div_4_Template, 7, 0, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, HomeComponent_div_5_Template, 2, 0, "div", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, HomeComponent_div_6_Template, 21, 0, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](1, "img", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](2, HomeComponent_input_2_Template, 1, 1, "input", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](3, HomeComponent_div_3_Template, 2, 4, "div", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](4, HomeComponent_div_4_Template, 7, 0, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](5, HomeComponent_div_5_Template, 2, 0, "div", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](6, HomeComponent_div_6_Template, 21, 0, "div", 6);
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngClass", ctx.carsView ? "hidden" : "visible");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", !ctx.carsView);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.carsView);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", !ctx.carsView);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", !ctx.carsView);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", !ctx.carsView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngClass", ctx.carsView ? "hidden" : "visible");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", !ctx.carsView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.carsView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", !ctx.carsView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", !ctx.carsView);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", !ctx.carsView);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgStyle, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_8__.NgModel, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__.Dir, _two_cars_comparing_two_cars_comparing_component__WEBPACK_IMPORTED_MODULE_2__.TwoCarsComparingComponent, _search_search_component__WEBPACK_IMPORTED_MODULE_3__.SearchComponent],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_8__.NgStyle, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_9__.NgModel, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_10__.Dir, _two_cars_comparing_two_cars_comparing_component__WEBPACK_IMPORTED_MODULE_3__.TwoCarsComparingComponent, _search_search_component__WEBPACK_IMPORTED_MODULE_4__.SearchComponent],
   styles: [".icon[_ngcontent-%COMP%]{\r\n    width: 55%;\r\n    margin: auto;\r\n    border-radius: 100%;\r\n    border: 1px solid black\r\n}\r\n\r\n.innerText[_ngcontent-%COMP%] {\r\n    text-align: center;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n    font-size: smaller;\r\n    margin-top: 8px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxVQUFVO0lBQ1YsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQjtBQUNKOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGVBQWU7QUFDbkIiLCJzb3VyY2VzQ29udGVudCI6WyIuaWNvbntcclxuICAgIHdpZHRoOiA1NSU7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2tcclxufVxyXG5cclxuLmlubmVyVGV4dCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC1zaXplOiBzbWFsbGVyO1xyXG4gICAgbWFyZ2luLXRvcDogOHB4O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
@@ -1333,25 +1374,25 @@ ParameterCardComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODU
     parameterUnits: "parameterUnits",
     imagePath: "imagePath"
   },
-  decls: 8,
+  decls: 9,
   vars: 4,
-  consts: [["alt", "", 2, "width", "80%", 3, "src"]],
+  consts: [[1, "innerText"], ["alt", "", 2, "width", "80%", 3, "src"]],
   template: function ParameterCardComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p")(1, "b");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "p")(2, "b");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "img", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "img", 1);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.value);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.parameterUnits, "");
@@ -1361,7 +1402,7 @@ ParameterCardComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODU
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.parameterName);
     }
   },
-  styles: ["p[_ngcontent-%COMP%]{\r\n    margin-bottom: 0;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFyYW1ldGVyLWNhcmQvcGFyYW1ldGVyLWNhcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtBQUNwQiIsInNvdXJjZXNDb250ZW50IjpbInB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  styles: ["p[_ngcontent-%COMP%]{\r\n    margin-bottom: 0;\r\n}\r\n\r\n.innerText[_ngcontent-%COMP%] {\r\n    text-align: center;\r\n    margin-top: 40px;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFyYW1ldGVyLWNhcmQvcGFyYW1ldGVyLWNhcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLHVCQUF1QjtBQUMzQiIsInNvdXJjZXNDb250ZW50IjpbInB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xyXG59XHJcblxyXG4uaW5uZXJUZXh0IHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbi10b3A6IDQwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
 /***/ }),
@@ -1510,7 +1551,7 @@ ResultsCarCardComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MOD
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", ctx.car.ImagePath, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
     }
   },
-  styles: ["img[_ngcontent-%COMP%]{\r\n    width: 140px;\r\n    float: right;\r\n}\r\n\r\n.star[_ngcontent-%COMP%]{\r\n    height: 16px;\r\n    width: auto;\r\n    margin-left: 5px;\r\n}\r\n\r\n.background[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 30%;\r\n    height: 20%;\r\n    border-radius:  0 0  0 5px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcmVzdWx0cy1jYXItY2FyZC9yZXN1bHRzLWNhci1jYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFlBQVk7SUFDWixXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixXQUFXO0lBQ1gsMEJBQTBCO0FBQzlCIiwic291cmNlc0NvbnRlbnQiOlsiaW1ne1xyXG4gICAgd2lkdGg6IDE0MHB4O1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG59XHJcblxyXG4uc3RhcntcclxuICAgIGhlaWdodDogMTZweDtcclxuICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDVweDtcclxufVxyXG5cclxuLmJhY2tncm91bmR7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB3aWR0aDogMzAlO1xyXG4gICAgaGVpZ2h0OiAyMCU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAgMCAwICAwIDVweDtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+  styles: ["img[_ngcontent-%COMP%]{\r\n    width: 140px;\r\n    float: right;\r\n}\r\n\r\n.star[_ngcontent-%COMP%]{\r\n    height: 16px;\r\n    width: auto;\r\n    margin-left: 5px;\r\n}\r\n\r\n.background[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 30%;\r\n    height: 24%;\r\n    border-radius:  0 0  0 5px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcmVzdWx0cy1jYXItY2FyZC9yZXN1bHRzLWNhci1jYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFlBQVk7SUFDWixXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixXQUFXO0lBQ1gsMEJBQTBCO0FBQzlCIiwic291cmNlc0NvbnRlbnQiOlsiaW1ne1xyXG4gICAgd2lkdGg6IDE0MHB4O1xyXG4gICAgZmxvYXQ6IHJpZ2h0O1xyXG59XHJcblxyXG4uc3RhcntcclxuICAgIGhlaWdodDogMTZweDtcclxuICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgbWFyZ2luLWxlZnQ6IDVweDtcclxufVxyXG5cclxuLmJhY2tncm91bmR7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB3aWR0aDogMzAlO1xyXG4gICAgaGVpZ2h0OiAyNCU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAgMCAwICAwIDVweDtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
 });
 
 /***/ }),
@@ -1530,10 +1571,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_service_data_service_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data-service/data-service.component */ 6124);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 4666);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 124);
-/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/bidi */ 2867);
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/bidi */ 2867);
 /* harmony import */ var _results_car_card_results_car_card_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../results-car-card/results-car-card.component */ 4523);
 /* harmony import */ var _result_card_result_card_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../result-card/result-card.component */ 7171);
 /* harmony import */ var _comparing_graph_comparing_graph_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../comparing-graph/comparing-graph.component */ 7025);
+
 
 
 
@@ -1615,7 +1658,7 @@ ResultsPageComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE
   selectors: [["app-results-page"]],
   decls: 42,
   vars: 44,
-  consts: [["dir", "rtl"], [1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-between"], [1, "boldText", 3, "routerLink", "queryParams"], [1, "boldText", 2, "font-size", "x-large", "padding-left", "50px"], [1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-between", "margin-top", "15px"], [1, "winner", 2, "width", "50%", "height", "30vh"], ["dir", "ltr", 1, "resultsCard", 3, "car"], [1, "looser", 2, "width", "50%", "height", "30vh"], ["dir", "rtl", 1, "resultsCard", 3, "car"], [1, "buttonsContainer", "flexContainer", 2, "flex-direction", "row", "justify-content", "space-around"], [3, "ngClass", "click"], ["id", "general", "dir", "rtl"], [1, "flexContainer", 2, "flex-direction", "row"], [2, "width", "33%"], [3, "car", "totalRank", "winner"], [2, "position", "static", "width", "33%", "display", "flex", "justify-content", "center", "z-index", "100"], ["src", "assets/abstractCar.png", "alt", "", 1, "carImage", 2, "left", "0", 3, "ngStyle"], ["src", "assets/abstractCar.png", "alt", "", 1, "carImage", 2, "right", "0", 3, "ngStyle"], [2, "width", "33%", "position", "absolute"], [2, "display", "flex", "flex-direction", "column", "align-items", "center", "margin-top", "30px"], ["src", "assets/finishLine.png", "alt", "", 2, "width", "62%"], ["src", "assets/finishLineShadow.png", "alt", "", 2, "width", "62%", "height", "11vh"], [1, "innerText"], [3, "bigIsGood", "cars", "paramName", "bottomText", "values"]],
+  consts: [["dir", "rtl"], [1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-between"], ["matDialogClose", "", 1, "boldText", 3, "routerLink", "queryParams"], [1, "boldText", 2, "font-size", "x-large", "padding-left", "50px"], [1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-between", "margin-top", "15px"], [1, "winner", 2, "width", "50%", "height", "30vh"], ["dir", "ltr", 1, "resultsCard", 3, "car"], [1, "looser", 2, "width", "50%", "height", "30vh"], ["dir", "rtl", 1, "resultsCard", 3, "car"], [1, "buttonsContainer", "flexContainer", 2, "flex-direction", "row", "justify-content", "space-around"], [3, "ngClass", "click"], ["id", "general", "dir", "rtl"], [1, "flexContainer", 2, "flex-direction", "row"], [2, "width", "33%"], [3, "car", "totalRank", "winner"], [2, "position", "static", "width", "33%", "display", "flex", "justify-content", "center", "z-index", "100"], ["src", "assets/abstractCar.png", "alt", "", 1, "carImage", 2, "left", "0", 3, "ngStyle"], ["src", "assets/abstractCar.png", "alt", "", 1, "carImage", 2, "right", "0", 3, "ngStyle"], [2, "width", "33%", "position", "absolute"], [2, "display", "flex", "flex-direction", "column", "align-items", "center", "margin-top", "30px"], ["src", "assets/finishLine.png", "alt", "", 2, "width", "62%"], ["src", "assets/finishLineShadow.png", "alt", "", 2, "width", "62%", "height", "11vh"], [1, "innerText"], [3, "bigIsGood", "cars", "paramName", "bottomText", "values"]],
   template: function ResultsPageComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
@@ -1704,7 +1747,7 @@ ResultsPageComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("bigIsGood", false)("cars", ctx.cars)("paramName", "\u05D3\u05E7\u05D5\u05EA")("bottomText", "\u05DE\u05D4\u05D9\u05E8\u05D5\u05EA \u05D8\u05E2\u05D9\u05E0\u05D4")("values", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction2"](41, _c4, ctx.cars[0].chargingSpeed, ctx.cars[1].chargingSpeed));
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgStyle, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterLink, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_8__.Dir, _results_car_card_results_car_card_component__WEBPACK_IMPORTED_MODULE_2__.ResultsCarCardComponent, _result_card_result_card_component__WEBPACK_IMPORTED_MODULE_3__.ResultCardComponent, _comparing_graph_comparing_graph_component__WEBPACK_IMPORTED_MODULE_4__.ComparingGraphComponent],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgStyle, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterLink, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__.MatDialogClose, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__.Dir, _results_car_card_results_car_card_component__WEBPACK_IMPORTED_MODULE_2__.ResultsCarCardComponent, _result_card_result_card_component__WEBPACK_IMPORTED_MODULE_3__.ResultCardComponent, _comparing_graph_comparing_graph_component__WEBPACK_IMPORTED_MODULE_4__.ComparingGraphComponent],
   styles: [".buttonsContainer[_ngcontent-%COMP%] {\r\n    background-color: #f0f0f0a5;\r\n    border: 1px solid rgb(164, 164, 164);\r\n    border-radius: 24px;\r\n    padding: 11px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: larger;\r\n}\r\n\r\n.focus[_ngcontent-%COMP%] {\r\n    background: transparent;\r\n    border-radius: 10px;\r\n    height: 4px;\r\n    padding: 0px 20px 0px 20px;\r\n    box-shadow: 0 25px 0 0 #000;\r\n    text-align: center;\r\n}\r\n\r\n.innerText[_ngcontent-%COMP%] {\r\n    text-align: center;\r\n    margin-top: 40px;\r\n    font-weight: bold;\r\n    font-family: sans-serif;\r\n}\r\n\r\n.carImage[_ngcontent-%COMP%] {\r\n    margin: unset;\r\n    height: 100px;\r\n}\r\n\r\n\r\nhr[_ngcontent-%COMP%]{\r\n    height: 9px;\r\n    display: block;\r\n    background-color: #d7d7d7;;\r\n    border: none;\r\n    margin: 30px;\r\n    border-radius: 6px;\r\n}\r\n\r\n\r\n.app-comparing-graph[_ngcontent-%COMP%]{\r\n    margin: 30px 30px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcmVzdWx0cy1wYWdlL3Jlc3VsdHMtcGFnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksMkJBQTJCO0lBQzNCLG9DQUFvQztJQUNwQyxtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLHlDQUF5QztJQUN6QyxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCwwQkFBMEI7SUFDMUIsMkJBQTJCO0lBQzNCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLHVCQUF1QjtBQUMzQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixhQUFhO0FBQ2pCOzs7QUFHQTtJQUNJLFdBQVc7SUFDWCxjQUFjO0lBQ2QseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osa0JBQWtCO0FBQ3RCOzs7QUFHQTtJQUNJLGlCQUFpQjtBQUNyQiIsInNvdXJjZXNDb250ZW50IjpbIi5idXR0b25zQ29udGFpbmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmMGYwZjBhNTtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIHJnYigxNjQsIDE2NCwgMTY0KTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDI0cHg7XHJcbiAgICBwYWRkaW5nOiAxMXB4O1xyXG4gICAgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXNpemU6IGxhcmdlcjtcclxufVxyXG5cclxuLmZvY3VzIHtcclxuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgIGhlaWdodDogNHB4O1xyXG4gICAgcGFkZGluZzogMHB4IDIwcHggMHB4IDIwcHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDI1cHggMCAwICMwMDA7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5pbm5lclRleHQge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgbWFyZ2luLXRvcDogNDBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5jYXJJbWFnZSB7XHJcbiAgICBtYXJnaW46IHVuc2V0O1xyXG4gICAgaGVpZ2h0OiAxMDBweDtcclxufVxyXG5cclxuXHJcbmhye1xyXG4gICAgaGVpZ2h0OiA5cHg7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNkN2Q3ZDc7O1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgbWFyZ2luOiAzMHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xyXG59XHJcblxyXG5cclxuLmFwcC1jb21wYXJpbmctZ3JhcGh7XHJcbiAgICBtYXJnaW46IDMwcHggMzBweDtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
 });
 
@@ -1864,6 +1907,7 @@ class SearchComponent {
   }
   closePopUp() {
     this.close.emit('close');
+    this.router.navigateByUrl('/');
   }
   changeFiltersView() {
     this.searchText = '';
@@ -2008,7 +2052,7 @@ SearchComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__[
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngClass", ctx.comparingCarArr.length === 0 ? "hidden" : "visible");
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngClass", ctx.comparingCarArr.length > 1 && ctx.comparingCarArr.length < 2 ? "hidden" : "visible");
+      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngClass", ctx.comparingCarArr.length == 1 ? "visible" : "hidden");
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.comparingCarArr[0]);
       _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
@@ -2042,69 +2086,101 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "TwoCarsComparingComponent": () => (/* binding */ TwoCarsComparingComponent)
 /* harmony export */ });
 /* harmony import */ var src_Model_Car__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/Model/Car */ 8062);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ 2867);
-/* harmony import */ var _car_home_card_car_home_card_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../car-home-card/car-home-card.component */ 446);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _data_service_data_service_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data-service/data-service.component */ 6124);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/bidi */ 2867);
+/* harmony import */ var _car_home_card_car_home_card_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../car-home-card/car-home-card.component */ 446);
+
+
 
 
 
 
 class TwoCarsComparingComponent {
-  constructor() {
+  constructor(data, router) {
+    this.data = data;
+    this.router = router;
     this.tesla = new src_Model_Car__WEBPACK_IMPORTED_MODULE_0__.Car();
-    this.ionic = new src_Model_Car__WEBPACK_IMPORTED_MODULE_0__.Car();
+    this.ev6 = new src_Model_Car__WEBPACK_IMPORTED_MODULE_0__.Car();
   }
   ngOnInit() {
     this.tesla.logo = 'assets/Branding/tesla.png';
-    this.tesla.model = 'Dual Motor';
+    this.tesla.model = 'Model 3';
+    this.tesla.subModel = 'Dual Motor';
     this.tesla.year = 2023;
-    this.tesla.company = 'טסלה מודל 3';
+    this.tesla.company = 'Tesla';
+    this.tesla.batteryRange = 320;
+    this.tesla.orderLink = 'https://www.tesla.com/model3';
+    this.tesla.price = 320000;
     this.tesla.ImagePath = 'assets/cars/tesla_m s 23.png';
-    this.ionic.logo = 'assets/Branding/hyundai.gif';
-    this.ionic.model = 'Sport Edition';
-    this.ionic.year = 2023;
-    this.ionic.company = 'KIA EV6';
-    this.ionic.ImagePath = 'assets/cars/kia ev6 23.png';
+    this.tesla.chargingSpeed = 50;
+    this.tesla.seatsNumber = 5;
+    this.tesla.zeroToHundred = 3.3;
+    this.tesla.Rank = '4.5';
+    this.tesla.safetyRank = 8;
+    this.ev6.chargingSpeed = 30;
+    this.ev6.safetyRank = 7;
+    this.ev6.price = 327500;
+    this.ev6.orderLink = 'https://kia-israel.co.il/רכב/ev6';
+    this.ev6.logo = 'assets/Branding/kia.png';
+    this.ev6.model = 'EV6';
+    this.ev6.subModel = 'Sport Edition';
+    this.ev6.year = 2023;
+    this.ev6.company = 'KIA';
+    this.ev6.seatsNumber = 5;
+    this.ev6.zeroToHundred = 4.2;
+    this.ev6.batteryRange = 400;
+    this.ev6.ImagePath = 'assets/cars/kia ev6 23.png';
+  }
+  openComparison() {
+    // this.data.comparingArray = [this.tesla,this.ev6]
+    // this.router.navigateByUrl('results')
+    this.router.navigateByUrl('/?search=true');
   }
 }
 TwoCarsComparingComponent.ɵfac = function TwoCarsComparingComponent_Factory(t) {
-  return new (t || TwoCarsComparingComponent)();
+  return new (t || TwoCarsComparingComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_data_service_data_service_component__WEBPACK_IMPORTED_MODULE_1__.DataServiceComponent), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router));
 };
-TwoCarsComparingComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+TwoCarsComparingComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
   type: TwoCarsComparingComponent,
   selectors: [["app-two-cars-comparing"]],
   decls: 18,
   vars: 2,
-  consts: [[1, "flexContainer", "card", "twoCarsContainer", 2, "flex-direction", "row", "margin-top", "16px", "justify-content", "space-evenly"], ["dir", "ltr", 2, "width", "44%", 3, "car"], [1, "spacer"], ["dir", "rtl", 2, "width", "44%", 3, "car"], [1, "shadow"], ["dir", "rtl", 1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-around", "margin-top", "10px"], [1, "boldText", "thinText"], ["dir", "rtl", 1, "flexContainer", 2, "margin-top", "10px"], [1, "button", 2, "font-size", "16px"]],
+  consts: [[1, "flexContainer", "card", "twoCarsContainer", 2, "flex-direction", "row", "margin-top", "16px", "justify-content", "space-evenly"], ["dir", "ltr", 2, "width", "44%", 3, "car"], [1, "spacer"], ["dir", "rtl", 2, "width", "44%", 3, "car"], [1, "shadow"], ["dir", "rtl", 1, "flexContainer", 2, "flex-direction", "row", "justify-content", "space-around", "margin-top", "10px"], [1, "boldText", "thinText"], ["dir", "rtl", 1, "flexContainer", 2, "margin-top", "10px"], [1, "button", 2, "font-size", "16px", "color", "black", 3, "click"]],
   template: function TwoCarsComparingComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "app-car-home-card", 1)(2, "div", 2)(3, "app-car-home-card", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](4, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "div", 5)(6, "div", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](7, "2740 \u05E6\u05E4\u05D9\u05D5\u05EA");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](8, "| ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "div", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](10, "1080 \u05DE\u05D3\u05E8\u05D2\u05D9\u05DD");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](11, "| ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "div", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, "530 \u05EA\u05D2\u05D5\u05D1\u05D5\u05EA");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 7)(15, "button", 8)(16, "h3");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](17, "\u05E7\u05D3\u05D9\u05DE\u05D4 \u05DC\u05D4\u05E9\u05D5\u05D5\u05EA!");
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "app-car-home-card", 1)(2, "div", 2)(3, "app-car-home-card", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](4, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "div", 5)(6, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, "2740 \u05E6\u05E4\u05D9\u05D5\u05EA");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](8, "| ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](9, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](10, "1080 \u05DE\u05D3\u05E8\u05D2\u05D9\u05DD");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](11, "| ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](12, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](13, "530 \u05EA\u05D2\u05D5\u05D1\u05D5\u05EA");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "div", 7)(15, "button", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function TwoCarsComparingComponent_Template_button_click_15_listener() {
+        return ctx.openComparison();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "h3");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "\u05D4\u05E9\u05D5\u05D5\u05D0\u05D4 \u05D7\u05D3\u05E9\u05D4!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("car", ctx.ionic);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("car", ctx.tesla);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("car", ctx.ev6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("car", ctx.tesla);
     }
   },
-  dependencies: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__.Dir, _car_home_card_car_home_card_component__WEBPACK_IMPORTED_MODULE_1__.CarHomeCardComponent],
+  dependencies: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_5__.Dir, _car_home_card_car_home_card_component__WEBPACK_IMPORTED_MODULE_2__.CarHomeCardComponent],
   styles: [".card[_ngcontent-%COMP%]{\r\n    background-image: -webkit-linear-gradient(#aaaaaa,red,45deg);\r\n}\r\n\r\n.button[_ngcontent-%COMP%] {\r\n    border: none;\r\n    background: url('button.png') center no-repeat;\r\n    background-size: contain;\r\n    padding: 0px 0px;\r\n    width: 50%;\r\n    margin: auto;\r\n    margin-top: 23px;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvdHdvLWNhcnMtY29tcGFyaW5nL3R3by1jYXJzLWNvbXBhcmluZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNERBQTREO0FBQ2hFOztBQUVBO0lBQ0ksWUFBWTtJQUNaLDhDQUEyRDtJQUMzRCx3QkFBd0I7SUFDeEIsZ0JBQWdCO0lBQ2hCLFVBQVU7SUFDVixZQUFZO0lBQ1osZ0JBQWdCO0FBQ3BCIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmR7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiAtd2Via2l0LWxpbmVhci1ncmFkaWVudCgjYWFhYWFhLHJlZCw0NWRlZyk7XHJcbn1cclxuXHJcbi5idXR0b24ge1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi9hc3NldHMvYnV0dG9uLnBuZycpIGNlbnRlciBuby1yZXBlYXQ7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvbnRhaW47XHJcbiAgICBwYWRkaW5nOiAwcHggMHB4O1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIG1hcmdpbjogYXV0bztcclxuICAgIG1hcmdpbi10b3A6IDIzcHg7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */"]
 });
 
